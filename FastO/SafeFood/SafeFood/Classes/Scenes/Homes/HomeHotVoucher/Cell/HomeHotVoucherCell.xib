@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunGothic-Regular.ttf">
+            <string>NanumBarunGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HomeHotBannerVoucherCell" id="gTV-IL-0wX" customClass="HomeHotVoucherCell" customModule="SafeFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="278"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="220" height="278"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_hotvoucher" translatesAutoresizingMaskIntoConstraints="NO" id="9OX-Xu-kxd">
+                        <rect key="frame" x="0.0" y="0.0" width="220" height="278"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Pf-v1-NCW">
+                        <rect key="frame" x="0.0" y="258" width="70" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sắp diễn ra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCJ-FZ-igq">
+                                <rect key="frame" x="9.5" y="4" width="51" height="12"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="10"/>
+                                <color key="textColor" name="white100"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="black50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="BEm-KT-HtQ"/>
+                            <constraint firstItem="rCJ-FZ-igq" firstAttribute="centerX" secondItem="8Pf-v1-NCW" secondAttribute="centerX" id="Iwo-IH-0lJ"/>
+                            <constraint firstAttribute="width" constant="70" id="PwQ-8K-duZ"/>
+                            <constraint firstItem="rCJ-FZ-igq" firstAttribute="centerY" secondItem="8Pf-v1-NCW" secondAttribute="centerY" id="dyY-tE-4OW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8Pf-v1-NCW" secondAttribute="bottom" id="FVB-J0-tht"/>
+                <constraint firstAttribute="trailing" secondItem="9OX-Xu-kxd" secondAttribute="trailing" id="Qd7-8g-TU6"/>
+                <constraint firstItem="9OX-Xu-kxd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Que-zd-kTV"/>
+                <constraint firstItem="9OX-Xu-kxd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VMB-Md-le7"/>
+                <constraint firstItem="8Pf-v1-NCW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wOb-kA-ULT"/>
+                <constraint firstAttribute="bottom" secondItem="9OX-Xu-kxd" secondAttribute="bottom" id="y4c-AA-wvC"/>
+            </constraints>
+            <size key="customSize" width="220" height="278"/>
+            <connections>
+                <outlet property="imageView" destination="9OX-Xu-kxd" id="fqh-JH-i7Z"/>
+                <outlet property="upComingView" destination="8Pf-v1-NCW" id="zSD-5M-VLQ"/>
+                <outlet property="upcomingLabel" destination="rCJ-FZ-igq" id="Ykx-QA-lgx"/>
+            </connections>
+            <point key="canvasLocation" x="156.52173913043478" y="81.696428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_hotvoucher" width="120" height="180"/>
+        <namedColor name="black50">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white100">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

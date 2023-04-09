@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="RatingOrderCell" customModule="SafeFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqL-II-LoZ">
+                        <rect key="frame" x="16" y="0.0" width="318" height="90"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="PBn-Zg-F6a">
+                                <rect key="frame" x="20" y="20" width="278" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mức độ hài lòng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-1K-v5C">
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Yh-Ja-7hy">
+                                        <rect key="frame" x="178" y="0.0" width="100" height="50"/>
+                                        <subviews>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGF-v9-mc3" customClass="HCSStarRatingView">
+                                                <rect key="frame" x="0.0" y="13" width="100" height="24"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="yellowFFCF6F"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="AiG-Em-V9X"/>
+                                                    <constraint firstAttribute="width" constant="100" id="fqY-Bb-ZWd"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyStarImage" value="ic-star"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="filledStarImage" value="ic-fill-star"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="jGF-v9-mc3" secondAttribute="trailing" id="IkO-WS-dZu"/>
+                                            <constraint firstItem="jGF-v9-mc3" firstAttribute="centerY" secondItem="9Yh-Ja-7hy" secondAttribute="centerY" id="fXM-S3-W8z"/>
+                                            <constraint firstItem="jGF-v9-mc3" firstAttribute="leading" secondItem="9Yh-Ja-7hy" secondAttribute="leading" id="wgE-mW-Zde"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PBn-Zg-F6a" firstAttribute="leading" secondItem="AqL-II-LoZ" secondAttribute="leading" constant="20" id="8Ju-l4-L6J"/>
+                            <constraint firstItem="PBn-Zg-F6a" firstAttribute="top" secondItem="AqL-II-LoZ" secondAttribute="top" constant="20" id="AL1-xa-677"/>
+                            <constraint firstAttribute="trailing" secondItem="PBn-Zg-F6a" secondAttribute="trailing" constant="20" id="SvI-7F-yAE"/>
+                            <constraint firstAttribute="bottom" secondItem="PBn-Zg-F6a" secondAttribute="bottom" constant="20" id="nFD-MW-Ika"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="grayD6D6D6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AqL-II-LoZ" secondAttribute="trailing" constant="16" id="Ncp-Z9-EtS"/>
+                    <constraint firstItem="AqL-II-LoZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="g0K-uE-7zk"/>
+                    <constraint firstItem="AqL-II-LoZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xkB-ZE-x2y"/>
+                    <constraint firstAttribute="bottom" secondItem="AqL-II-LoZ" secondAttribute="bottom" id="zie-1L-e3E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="ratingCell" destination="AqL-II-LoZ" id="Hrx-pi-Z4c"/>
+                <outlet property="starView" destination="jGF-v9-mc3" id="RQL-Jz-wKb"/>
+                <outlet property="titleLabel" destination="Ebl-1K-v5C" id="HMS-vA-RZM"/>
+            </connections>
+            <point key="canvasLocation" x="-27.480916030534349" y="3.5211267605633805"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="jGF-v9-mc3">
+            <size key="intrinsicContentSize" width="240" height="44"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic-fill-star" width="12" height="12"/>
+        <image name="ic-star" width="12" height="12"/>
+        <namedColor name="grayD6D6D6">
+            <color red="0.83899998664855957" green="0.83899998664855957" blue="0.83899998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yellowFFCF6F">
+            <color red="1" green="0.81199997663497925" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

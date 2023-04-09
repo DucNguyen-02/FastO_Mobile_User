@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunGothic-Bold.ttf">
+            <string>NanumBarunGothicBold</string>
+        </array>
+        <array key="NanumBarunGothic-Regular.ttf">
+            <string>NanumBarunGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="SearchResultProductCell" customModule="AppPass" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="rj2-H6-wye">
+                        <rect key="frame" x="16" y="6" width="288" height="90"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="apW-A3-17K" customClass="BaseImageView" customModule="AppPass" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="apW-A3-17K" secondAttribute="height" multiplier="1:1" id="GO6-1a-U4M"/>
+                                    <constraint firstAttribute="width" constant="90" id="p9t-ng-Yk0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTS-4E-o1Z">
+                                <rect key="frame" x="102" y="0.0" width="186" height="90"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dal-vc-xUq">
+                                        <rect key="frame" x="0.0" y="4" width="186" height="108"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="AhS-hJ-xSU">
+                                                <rect key="frame" x="0.0" y="0.0" width="186" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iced Beach Tea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wv0-Tb-Bbx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="186" height="14"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="12"/>
+                                                        <color key="textColor" name="black100"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mô tả sơ lược: 공무원의 신분과 정적 중립성은 법률이 정하는 바에 의..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR6-0K-thZ">
+                                                        <rect key="frame" x="0.0" y="20" width="186" height="28"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="12"/>
+                                                        <color key="textColor" name="gray737374"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bH-cz-6eF">
+                                                <rect key="frame" x="0.0" y="60" width="186" height="48"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="10"/>
+                                                <color key="textColor" name="blue4789FA"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="j3d-cD-my8">
+                                        <rect key="frame" x="101.5" y="57.5" width="84.5" height="32.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JB-6c-fI8">
+                                                <rect key="frame" x="45" y="0.0" width="39.5" height="12"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="10"/>
+                                                <color key="textColor" name="grayA2A2A3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="XmS-fn-HvX">
+                                                <rect key="frame" x="0.0" y="16" width="84.5" height="16.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-15%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5h-aB-DMO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="25.5" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="10"/>
+                                                        <color key="textColor" name="blue4789FA"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udf-EX-nEy">
+                                                        <rect key="frame" x="29.5" y="0.0" width="55" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="14"/>
+                                                        <color key="textColor" name="black100"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="j3d-cD-my8" secondAttribute="bottom" id="LWh-tm-dA7"/>
+                                    <constraint firstItem="dal-vc-xUq" firstAttribute="leading" secondItem="bTS-4E-o1Z" secondAttribute="leading" id="Tp4-1d-tlY"/>
+                                    <constraint firstItem="dal-vc-xUq" firstAttribute="top" secondItem="bTS-4E-o1Z" secondAttribute="top" constant="4" id="ZL1-77-XUs"/>
+                                    <constraint firstAttribute="trailing" secondItem="j3d-cD-my8" secondAttribute="trailing" id="Zwg-N3-glY"/>
+                                    <constraint firstAttribute="trailing" secondItem="dal-vc-xUq" secondAttribute="trailing" id="mwy-3B-fJf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="wOQ-62-vLj"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="rj2-H6-wye" secondAttribute="trailing" constant="16" id="1wc-tf-DOV"/>
+                    <constraint firstAttribute="bottom" secondItem="rj2-H6-wye" secondAttribute="bottom" constant="6" id="JpC-t2-ORA"/>
+                    <constraint firstItem="rj2-H6-wye" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="hVZ-Sn-Ov2"/>
+                    <constraint firstItem="rj2-H6-wye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="hx2-1b-hKw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="DR6-0K-thZ" id="T7L-kg-n21"/>
+                <outlet property="discountLabel" destination="q5h-aB-DMO" id="59p-Af-OO0"/>
+                <outlet property="nameProductLabel" destination="wv0-Tb-Bbx" id="rzv-9n-tUg"/>
+                <outlet property="priceAfterDiscountLabel" destination="udf-EX-nEy" id="2yR-7i-mTk"/>
+                <outlet property="priceBeforeDiscountLabel" destination="5JB-6c-fI8" id="QeF-lx-tFD"/>
+                <outlet property="productImageView" destination="apW-A3-17K" id="skR-az-S0P"/>
+                <outlet property="statusLabel" destination="1bH-cz-6eF" id="zcb-Om-n6H"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="132.25446428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="black100">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue4789FA">
+            <color red="0.27843137254901962" green="0.53725490196078429" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray737374">
+            <color red="0.45098039215686275" green="0.45098039215686275" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayA2A2A3">
+            <color red="0.63529411764705879" green="0.63529411764705879" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

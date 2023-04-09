@@ -1,0 +1,97 @@
+// Authentication
+"sign_in" = "Sign in";
+"login" = "Login";
+"sign_in_reminder" = "Please enter your email address and password below";
+"sign_in_terms" = "Terms";
+"sign_in_need_a_count" = "Need an account? Sign up";
+
+"search" = "Search...";
+"name" = "Name";
+"phone" = "Phone";
+"email" = "Email";
+"password" = "Password";
+"create_account" = "Create account";
+
+"sign_up" = "Create Account";
+"sign_up_first_name" = "First Name";
+"sign_up_last_name" = "Last Name";
+"sign_up_birthday" = "Your Birthday";
+"sign_up_phone" = "Phone";
+"sign_up_enter_your_name" = "Enter your name";
+
+"sign_up_email" = "Email";
+"sign_up_enter_your_email" = "Enter your email";
+"sign_up_password" = "Password";
+"sign_up_enter_your_password" = "Enter your password";
+"sign_up_password_convention" = "Please enter a password of at least 8 characters with a combination of alphanumeric characters, including at least one uppercase letter.";
+"sign_up_re_enter_password" = "Re-enter your password";
+"sign_up_confirm_password" = "Confirm Password";
+"sign_up_error" = "The information you entered is incorrect. Please enter again after confirmation";
+"sign_up_already_a_member" = "Already a member? %@";
+"sign_up_need_accept_term_and_policy" = "I agree to the terms and policies of SafeFood's Privacy Policy";
+
+"resend" = "Resend code";
+"verificaiton_code" = "verification code";
+"enter_verification_code" = "Enter verification code sent to ";
+"verify" = "Verify";
+"enter_digit_code" = "Enter Digit Code";
+"code_number" = "Code number";
+
+"sign_in_title" = "Nice to meet you !";
+"sign_in_kakaoTalk" = "Login with KakaoTalk";
+"sign_in_facebook" = "Login with Facebook";
+"sign_in_apple" = "Login with Apple";
+"sign_in_google" = "Login with Google";
+"sign_in_signUpByEmail" = "Sign Up By Email";
+"sign_in_signInByEmail" = "Sign In By Email";
+"sign_in_experience" = "Experience";
+
+"sign_in_option" = "Sign In";
+"sign_in_email" = "Email";
+"sign_in_placehold_email" = "Enter your email";
+"sign_in_password" = "Password";
+"sign_in_placehold_password" = "Enter your password";
+"sign_in_forgot_password" = "Forgot password";
+"sign_in_email_error" = "Email invalid. Please check again ";
+"sign_in_or" = "Or";
+"sign_in_password_error" = "Password invalid. Please check again";
+
+"forget_password" = "Forgot password";
+"forget_password_email" = "Email";
+"forget_password_enter_your_email" = "Enter your email address";
+"forget_password_guide" = "Enter your registered email address and we will send you a password reset code";
+"forget_password_send_button" = "Send";
+
+"digit_code" = "Enter Digit Code";
+"digit_code_guide" = " Please enter the 6-digit verification code sent to ";
+"digit_code_code_number" = "Code number";
+"digit_code_verify" = "Confirm";
+"digit_code_resend_code" = "Resend code";
+"digit_code_inactive" = "Account inactive. Please enter the 6-digit verification code sent to ";
+
+"reset_password_new_password" = "New password";
+"reset_password_confirm_password" = "Re-enter new password";
+"reset_password_placeholder_new_password" = "Enter your new password";
+"reset_password_placeholader_confirm_password" = "Enter your confirm password";
+"reset_password_guide" = "Please enter a password of at least 8 characters with a combination of alphanumeric characters, including at least one uppercase letter.";
+"reset_password" = "Reset password";
+
+"language_english" = "English";
+"language_vietnamese" = "Vietnamese";
+"language_korea" = "Korea";
+
+//Detail Brand
+"detail_brand_menu" = "Menu";
+"detail_brand_menu_category" = "Category";
+"detail_brand_order" = "Order Details";
+"detail_brand_no_product" = "No product";
+"detail_brand_product" = "product";
+"detail_brand_total_discount" = "Total discount";
+"detail_brand_total_payment" = "Total payment";
+"detail_brand_buy" = "Buy Now";
+"detail_brand_payment" = "Payment";
+"detail_brand_add" = "Add";
+"detail_brand_recommend" = "Recommend";
+"detail_brand_menu_error" = "“Please select the quantity of the product you wish to purchase”";
+"detail_brand_detail_product_error" = "“Please select the quantity of the product you wish to purchase”";
+"detail_brand_voucher" = "Voucher";

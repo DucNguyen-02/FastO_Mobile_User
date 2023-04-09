@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Community View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ListCommunityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ListCommunityViewController" customModule="SafeFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nLv-JQ-oMm" customClass="BaseTableView" customModule="SafeFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="98.5" width="414" height="763.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TB0-fY-u0r" userLabel="Line View">
+                                <rect key="frame" x="0.0" y="98" width="414" height="0.5"/>
+                                <color key="backgroundColor" name="grayA2A2A3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="Wyw-A3-CVR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="df5-PX-cHm" customClass="CommunityShopView" customModule="SafeFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3yH-Wg-JGK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="white100"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="df5-PX-cHm" secondAttribute="trailing" id="96M-YO-5NO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TB0-fY-u0r" secondAttribute="trailing" id="Az3-zD-Tda"/>
+                            <constraint firstItem="TB0-fY-u0r" firstAttribute="top" secondItem="df5-PX-cHm" secondAttribute="bottom" id="BYX-1Z-5dt"/>
+                            <constraint firstItem="TB0-fY-u0r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ijp-ot-Udf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nLv-JQ-oMm" secondAttribute="trailing" id="M8s-WQ-5rP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nLv-JQ-oMm" secondAttribute="bottom" id="VTg-mC-Mg7"/>
+                            <constraint firstItem="df5-PX-cHm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WiP-vO-88z"/>
+                            <constraint firstItem="nLv-JQ-oMm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a5Y-Xt-qum"/>
+                            <constraint firstItem="nLv-JQ-oMm" firstAttribute="top" secondItem="TB0-fY-u0r" secondAttribute="bottom" id="gno-MD-SpM"/>
+                            <constraint firstItem="df5-PX-cHm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jGs-ck-tge"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="listShopView" destination="df5-PX-cHm" id="t6G-w8-9yn"/>
+                        <outlet property="tableView" destination="nLv-JQ-oMm" id="D7L-2K-hYL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="grayA2A2A3">
+            <color red="0.63499999046325684" green="0.63499999046325684" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white100">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeNewsView" customModule="AppPass" customModuleProvider="target">
+            <connections>
+                <outlet property="pageControl" destination="sP7-IC-Eer" id="00h-Fi-gnj"/>
+                <outlet property="pagerView" destination="vha-Cn-MuI" id="KSR-S2-bbi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="474"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Yez-uX-wZv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="474"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vha-Cn-MuI" customClass="FSPagerView" customModule="FSPagerView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="456"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sP7-IC-Eer" customClass="FSPageControl" customModule="FSPagerView">
+                            <rect key="frame" x="0.0" y="468" width="414" height="6"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="6" id="kCB-aK-nZj"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Yez-uX-wZv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6gy-mc-iuP"/>
+                <constraint firstAttribute="trailing" secondItem="Yez-uX-wZv" secondAttribute="trailing" id="Ha6-ge-39S"/>
+                <constraint firstAttribute="bottom" secondItem="Yez-uX-wZv" secondAttribute="bottom" id="ciH-lJ-eNm"/>
+                <constraint firstItem="Yez-uX-wZv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qUm-bv-LYR"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="100.00000000000001" y="4.0178571428571423"/>
+        </view>
+    </objects>
+</document>

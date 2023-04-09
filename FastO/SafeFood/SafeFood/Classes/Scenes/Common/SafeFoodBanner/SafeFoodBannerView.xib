@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunGothic-Bold.ttf">
+            <string>NanumBarunGothicBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SafeFoodBannerView" customModule="SafeFood" customModuleProvider="target">
+            <connections>
+                <outlet property="pageControl" destination="3Uj-GN-09C" id="5M2-V0-lKS"/>
+                <outlet property="pageControlView" destination="OvO-gN-KnU" id="nTj-Nh-Npp"/>
+                <outlet property="pagerView" destination="jXi-6F-hek" id="Bvg-ML-mhq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="468" height="309"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXi-6F-hek" customClass="FSPagerView" customModule="FSPagerView">
+                    <rect key="frame" x="0.0" y="0.0" width="468" height="309"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" selected="YES"/>
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvO-gN-KnU">
+                    <rect key="frame" x="417" y="273" width="35" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Uj-GN-09C">
+                            <rect key="frame" x="9.5" y="3.5" width="16" height="13"/>
+                            <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="11"/>
+                            <color key="textColor" name="white100"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="blue4789FA"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="LlQ-c1-KpI"/>
+                        <constraint firstAttribute="width" constant="35" id="MkL-xe-arj"/>
+                        <constraint firstItem="3Uj-GN-09C" firstAttribute="centerX" secondItem="OvO-gN-KnU" secondAttribute="centerX" id="MpR-Vx-rlC"/>
+                        <constraint firstItem="3Uj-GN-09C" firstAttribute="centerY" secondItem="OvO-gN-KnU" secondAttribute="centerY" id="x26-kc-D3x"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jXi-6F-hek" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3XU-rb-vGl"/>
+                <constraint firstAttribute="bottom" secondItem="jXi-6F-hek" secondAttribute="bottom" id="FCQ-Ac-rej"/>
+                <constraint firstAttribute="trailing" secondItem="jXi-6F-hek" secondAttribute="trailing" id="PPS-B1-o8Y"/>
+                <constraint firstItem="jXi-6F-hek" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iHS-Pt-rXW"/>
+                <constraint firstAttribute="bottom" secondItem="OvO-gN-KnU" secondAttribute="bottom" constant="16" id="nQH-DC-H8b"/>
+                <constraint firstAttribute="trailing" secondItem="OvO-gN-KnU" secondAttribute="trailing" constant="16" id="sM9-V5-X1j"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="215.94202898550725" y="-467.74553571428567"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="blue4789FA">
+            <color red="0.27799999713897705" green="0.53700000047683716" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white100">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

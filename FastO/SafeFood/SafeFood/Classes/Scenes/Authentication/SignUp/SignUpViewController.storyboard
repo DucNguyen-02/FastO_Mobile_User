@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Medium.ttf">
+            <string>Lexend-Medium</string>
+        </array>
+        <array key="Lexend-Regular.ttf">
+            <string>Lexend-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="AOp-F3-kiX">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="BBt-Ch-Dd9" customClass="SignUpViewController" customModule="SafeFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EEX-GO-w9E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2E6-gS-SV7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLa-el-chZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="784"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="sLU-XS-Rqm">
+                                                <rect key="frame" x="16" y="16" width="382" height="601.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="NZS-3m-1cm" userLabel="Name Stack View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="68"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="j4s-uy-lmf" userLabel="First Name Stack View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="68"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MP-D2-n9E">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                        <color key="textColor" name="black100"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex: Nguyen" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nDK-cR-Dys" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="28" width="179" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="aEt-HE-jyT"/>
+                                                                        </constraints>
+                                                                        <color key="textColor" name="black100"/>
+                                                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                <integer key="value" value="255"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="4"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="0.5"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" name="black100"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Wh8-hZ-bPF" userLabel="Last Name Stack View">
+                                                                <rect key="frame" x="203" y="0.0" width="179" height="68"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov9-sK-cQN">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                        <color key="textColor" name="black100"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex: Van A" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yor-6I-NeM" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="28" width="179" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="CfU-de-fbY"/>
+                                                                        </constraints>
+                                                                        <color key="textColor" name="black100"/>
+                                                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                <integer key="value" value="255"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="4"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="0.5"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" name="black100"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="68" id="VOq-Yh-Knb"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="WNv-fC-IX4" userLabel="Birthday Stack View">
+                                                        <rect key="frame" x="0.0" y="92" width="382" height="68"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f5-IM-m2b">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="16"/>
+                                                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                <color key="textColor" name="black100"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHq-aj-nGx">
+                                                                <rect key="frame" x="0.0" y="28" width="382" height="40"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="oOu-fm-yuF">
+                                                                        <rect key="frame" x="8" y="0.0" width="366" height="40"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="31/12/2000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTF-b1-oqM" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="338" height="40"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="40" id="f6J-Hl-ZMO"/>
+                                                                                </constraints>
+                                                                                <color key="textColor" name="black100"/>
+                                                                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                        <integer key="value" value="255"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </textField>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4RH-f5-tes">
+                                                                                <rect key="frame" x="338" y="0.0" width="28" height="40"/>
+                                                                                <subviews>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tmu-oB-YC8">
+                                                                                        <rect key="frame" x="4" y="8" width="24" height="24"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="24" id="YKL-43-hCg"/>
+                                                                                            <constraint firstAttribute="width" constant="24" id="cnm-nz-RWU"/>
+                                                                                        </constraints>
+                                                                                        <state key="normal" image="authentication-sign-up-canlendar"/>
+                                                                                    </button>
+                                                                                </subviews>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstItem="Tmu-oB-YC8" firstAttribute="centerY" secondItem="4RH-f5-tes" secondAttribute="centerY" id="0nY-T2-k29"/>
+                                                                                    <constraint firstAttribute="trailing" secondItem="Tmu-oB-YC8" secondAttribute="trailing" id="LD0-Cz-tVf"/>
+                                                                                    <constraint firstItem="Tmu-oB-YC8" firstAttribute="leading" secondItem="4RH-f5-tes" secondAttribute="leading" constant="4" id="RWK-OQ-W0f"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstItem="NTF-b1-oqM" firstAttribute="trailing" secondItem="4RH-f5-tes" secondAttribute="leading" id="pVf-ue-qjI"/>
+                                                                        </constraints>
+                                                                    </stackView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2L-Jj-RWv" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                                                                        <connections>
+                                                                            <action selector="chooseBirthdayButtonTapped:" destination="BBt-Ch-Dd9" eventType="touchUpInside" id="diV-es-bPJ"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="i2L-Jj-RWv" firstAttribute="leading" secondItem="VHq-aj-nGx" secondAttribute="leading" id="2fQ-uh-1Rh"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="i2L-Jj-RWv" secondAttribute="bottom" id="5xc-yC-HVs"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="oOu-fm-yuF" secondAttribute="trailing" constant="8" id="KwI-wd-i9D"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="oOu-fm-yuF" secondAttribute="bottom" id="S1r-oP-cEv"/>
+                                                                    <constraint firstItem="oOu-fm-yuF" firstAttribute="top" secondItem="VHq-aj-nGx" secondAttribute="top" id="al8-uZ-ecP"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="i2L-Jj-RWv" secondAttribute="trailing" id="go2-Lz-fip"/>
+                                                                    <constraint firstItem="i2L-Jj-RWv" firstAttribute="top" secondItem="VHq-aj-nGx" secondAttribute="top" id="kTU-i5-zWH"/>
+                                                                    <constraint firstItem="oOu-fm-yuF" firstAttribute="leading" secondItem="VHq-aj-nGx" secondAttribute="leading" constant="8" id="rer-ou-Bvd"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="black100"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="68" id="mgT-8v-nwa"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hXE-9H-KAm" userLabel="Email Stack View">
+                                                        <rect key="frame" x="0.0" y="184" width="382" height="68"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCO-BY-Nxm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="16"/>
+                                                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                <color key="textColor" name="black100"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cot-zr-Npy" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="28" width="382" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="p1U-aC-vCn"/>
+                                                                </constraints>
+                                                                <color key="textColor" name="black100"/>
+                                                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                        <integer key="value" value="255"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="black100"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="68" id="TJx-lf-CF8"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gya-7Y-u3h" userLabel="Phone Stack View">
+                                                        <rect key="frame" x="0.0" y="276" width="382" height="68"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J78-gN-EJK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="16"/>
+                                                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                <color key="textColor" name="black100"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+84 123456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X2D-BJ-l9w" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="28" width="382" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="rCR-ix-5Xn"/>
+                                                                </constraints>
+                                                                <color key="textColor" name="black100"/>
+                                                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                        <integer key="value" value="255"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="black100"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="68" id="WrL-gA-WUG"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Uuh-Ye-Q5f" userLabel="Password Stack View">
+                                                        <rect key="frame" x="0.0" y="368" width="382" height="141.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99x-dI-tR6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="17.5"/>
+                                                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                <color key="textColor" name="black100"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DiT-0V-rJh">
+                                                                <rect key="frame" x="0.0" y="29.5" width="382" height="40"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gcr-cp-Acr" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="X6H-E2-dBv"/>
+                                                                        </constraints>
+                                                                        <color key="textColor" name="black100"/>
+                                                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                <integer key="value" value="255"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgO-3W-m2Z">
+                                                                        <rect key="frame" x="342" y="0.0" width="40" height="40"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-R8-fDk" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                                                                <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="24" id="LQu-Vd-6dT"/>
+                                                                                    <constraint firstAttribute="width" constant="24" id="TLP-F6-QU5"/>
+                                                                                </constraints>
+                                                                                <state key="normal" image="ic_eyeslash"/>
+                                                                                <connections>
+                                                                                    <action selector="hiddenPasswordButtonTapped:" destination="BBt-Ch-Dd9" eventType="touchUpInside" id="thS-4D-oDk"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="1jj-R8-fDk" firstAttribute="centerY" secondItem="TgO-3W-m2Z" secondAttribute="centerY" id="549-HS-iVq"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="1jj-R8-fDk" secondAttribute="trailing" constant="8" id="W4d-g0-R7r"/>
+                                                                            <constraint firstItem="1jj-R8-fDk" firstAttribute="leading" secondItem="TgO-3W-m2Z" secondAttribute="leading" constant="8" id="rRy-BF-qMW"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="black100"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rEA-UC-yrR">
+                                                                <rect key="frame" x="0.0" y="81.5" width="382" height="60"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFD-C4-0mr">
+                                                                        <rect key="frame" x="16" y="4" width="358" height="52"/>
+                                                                        <string key="text">Please enter a password of at least 8 characters with a combination of alphanumeric characters, including at least one uppercase letter.</string>
+                                                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="12"/>
+                                                                        <color key="textColor" name="grayA2A2A3"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" name="whiteF5F5F5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="JFD-C4-0mr" secondAttribute="bottom" constant="4" id="5IZ-bp-n8m"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="VP8-Xp-K4z"/>
+                                                                    <constraint firstItem="JFD-C4-0mr" firstAttribute="top" secondItem="rEA-UC-yrR" secondAttribute="top" constant="4" id="bMT-XX-qlc"/>
+                                                                    <constraint firstItem="JFD-C4-0mr" firstAttribute="leading" secondItem="rEA-UC-yrR" secondAttribute="leading" constant="16" id="lyV-3s-W0c"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="JFD-C4-0mr" secondAttribute="trailing" constant="8" id="vCn-og-c6i"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="141.5" id="34F-Re-Ls4"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="t1u-GS-flB" userLabel="Re-password Stack View">
+                                                        <rect key="frame" x="0.0" y="533.5" width="382" height="68"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynW-An-CfV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="16"/>
+                                                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                <color key="textColor" name="black100"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LcD-TB-DQc">
+                                                                <rect key="frame" x="0.0" y="28" width="382" height="40"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter to re-password" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ivp-yg-vZi" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="hNj-lA-AEf"/>
+                                                                        </constraints>
+                                                                        <color key="textColor" name="black100"/>
+                                                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                                <integer key="value" value="255"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yap-se-cbV">
+                                                                        <rect key="frame" x="342" y="0.0" width="40" height="40"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8x-ol-PrG" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                                                                <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="24" id="fq4-Qm-B1a"/>
+                                                                                    <constraint firstAttribute="width" constant="24" id="g7B-rF-SD7"/>
+                                                                                </constraints>
+                                                                                <state key="normal" image="ic_eyeslash"/>
+                                                                                <connections>
+                                                                                    <action selector="hiddenPasswordButtonTapped:" destination="BBt-Ch-Dd9" eventType="touchUpInside" id="eAl-aX-88c"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="N8x-ol-PrG" firstAttribute="centerY" secondItem="Yap-se-cbV" secondAttribute="centerY" id="1cp-1K-O51"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="N8x-ol-PrG" secondAttribute="trailing" constant="8" id="H3E-pW-U4o"/>
+                                                                            <constraint firstItem="N8x-ol-PrG" firstAttribute="leading" secondItem="Yap-se-cbV" secondAttribute="leading" constant="8" id="PVa-44-sA4"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="black100"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="68" id="KAV-bg-Syf"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="oFN-pX-CWt">
+                                                <rect key="frame" x="16" y="641.5" width="382" height="118.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="G5L-4I-DFq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="74"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="b6M-PA-Dgw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="22"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZu-5S-gUU" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="hZu-5S-gUU" secondAttribute="height" multiplier="1:1" id="nLb-8b-r2g"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="authentication-checkmark-empty"/>
+                                                                        <connections>
+                                                                            <action selector="termsAndPolicyButtonTapped:" destination="BBt-Ch-Dd9" eventType="touchUpInside" id="FIh-VJ-ecC"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTC-Vx-hIZ">
+                                                                        <rect key="frame" x="34" y="0.0" width="348" height="22"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb6-0s-DnS" customClass="TermsAndPolicyLabel" customModule="SafeFood" customModuleProvider="target">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="348" height="22"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="nZB-QI-Tee"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="pb6-0s-DnS" secondAttribute="bottom" id="7Te-fG-MfF"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="pb6-0s-DnS" secondAttribute="trailing" id="ANT-oJ-0sN"/>
+                                                                            <constraint firstItem="pb6-0s-DnS" firstAttribute="top" secondItem="OTC-Vx-hIZ" secondAttribute="top" id="Sd5-hY-bIh"/>
+                                                                            <constraint firstItem="pb6-0s-DnS" firstAttribute="leading" secondItem="OTC-Vx-hIZ" secondAttribute="leading" id="fea-BX-bYI"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kci-3E-fqD" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="34" width="382" height="40"/>
+                                                                <color key="backgroundColor" name="blue4789FA"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="Eia-Ta-jvx"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="16"/>
+                                                                <state key="normal" title="Create Account">
+                                                                    <color key="titleColor" name="white100"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="signUpButtonTapped:" destination="BBt-Ch-Dd9" eventType="touchUpInside" id="nc3-R2-7Sy"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngV-wU-cEF" customClass="SignInLabel" customModule="SafeFood" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="98" width="382" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="sLU-XS-Rqm" firstAttribute="leading" secondItem="hLa-el-chZ" secondAttribute="leading" constant="16" id="6P5-7K-DQ8"/>
+                                            <constraint firstItem="sLU-XS-Rqm" firstAttribute="top" secondItem="hLa-el-chZ" secondAttribute="top" constant="16" id="AMK-7Q-IgD"/>
+                                            <constraint firstAttribute="trailing" secondItem="sLU-XS-Rqm" secondAttribute="trailing" constant="16" id="QAj-8a-OCQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="oFN-pX-CWt" secondAttribute="trailing" constant="16" id="W20-I4-sa6"/>
+                                            <constraint firstItem="oFN-pX-CWt" firstAttribute="leading" secondItem="hLa-el-chZ" secondAttribute="leading" constant="16" id="qWW-d9-LzD"/>
+                                            <constraint firstAttribute="bottom" secondItem="oFN-pX-CWt" secondAttribute="bottom" constant="24" id="sTz-lY-pPO"/>
+                                            <constraint firstItem="oFN-pX-CWt" firstAttribute="top" secondItem="sLU-XS-Rqm" secondAttribute="bottom" constant="24" id="yAl-2w-lGo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hLa-el-chZ" firstAttribute="bottom" secondItem="BT4-aU-G2F" secondAttribute="bottom" id="5p5-VF-v1h"/>
+                                    <constraint firstItem="hLa-el-chZ" firstAttribute="height" secondItem="ge0-7W-pEV" secondAttribute="height" priority="250" id="6b7-Rn-9YA"/>
+                                    <constraint firstItem="hLa-el-chZ" firstAttribute="width" secondItem="ge0-7W-pEV" secondAttribute="width" id="LXk-Un-Ktu"/>
+                                    <constraint firstItem="hLa-el-chZ" firstAttribute="trailing" secondItem="BT4-aU-G2F" secondAttribute="trailing" id="Vva-PW-IfU"/>
+                                    <constraint firstItem="hLa-el-chZ" firstAttribute="leading" secondItem="BT4-aU-G2F" secondAttribute="leading" id="Z2d-9e-IbK"/>
+                                    <constraint firstItem="hLa-el-chZ" firstAttribute="top" secondItem="BT4-aU-G2F" secondAttribute="top" id="btI-NU-ILR"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="BT4-aU-G2F"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ge0-7W-pEV"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LnU-Np-cCR"/>
+                        <color key="backgroundColor" name="white100"/>
+                        <constraints>
+                            <constraint firstItem="LnU-Np-cCR" firstAttribute="trailing" secondItem="2E6-gS-SV7" secondAttribute="trailing" id="Dh5-Hq-bpz"/>
+                            <constraint firstItem="2E6-gS-SV7" firstAttribute="top" secondItem="LnU-Np-cCR" secondAttribute="top" id="LXe-PF-FyV"/>
+                            <constraint firstItem="2E6-gS-SV7" firstAttribute="leading" secondItem="LnU-Np-cCR" secondAttribute="leading" id="wfR-si-wnx"/>
+                            <constraint firstAttribute="bottom" secondItem="2E6-gS-SV7" secondAttribute="bottom" id="ySM-QX-1tK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthdayTextField" destination="NTF-b1-oqM" id="COY-Zd-L1m"/>
+                        <outlet property="chooseBirthdayButton" destination="i2L-Jj-RWv" id="LB1-Bi-Q7o"/>
+                        <outlet property="confirmPasswordTextField" destination="ivp-yg-vZi" id="ni3-C7-sVd"/>
+                        <outlet property="emailTextField" destination="cot-zr-Npy" id="7Te-vU-r8X"/>
+                        <outlet property="firstNameTextField" destination="nDK-cR-Dys" id="CGN-F0-Fw4"/>
+                        <outlet property="hiddenConfirmPasswordButton" destination="N8x-ol-PrG" id="9jk-6k-2CU"/>
+                        <outlet property="hiddenPasswordButton" destination="1jj-R8-fDk" id="RJK-aV-UKK"/>
+                        <outlet property="lastNameTextField" destination="Yor-6I-NeM" id="5Dd-ZA-JYs"/>
+                        <outlet property="localizedBirthdayLabel" destination="1f5-IM-m2b" id="xsC-JG-Nt5"/>
+                        <outlet property="localizedConfirmPasswordLabel" destination="ynW-An-CfV" id="IAp-Ob-c5e"/>
+                        <outlet property="localizedEmailLabel" destination="ZCO-BY-Nxm" id="Qly-Tc-uFl"/>
+                        <outlet property="localizedFirstNameLabel" destination="9MP-D2-n9E" id="YoD-cz-P2m"/>
+                        <outlet property="localizedGuidePasswordLabel" destination="JFD-C4-0mr" id="mgh-SW-V53"/>
+                        <outlet property="localizedLastNameLabel" destination="ov9-sK-cQN" id="7S2-Bo-8dQ"/>
+                        <outlet property="localizedPasswordLabel" destination="99x-dI-tR6" id="tXK-E5-gNs"/>
+                        <outlet property="localizedPhoneLabel" destination="J78-gN-EJK" id="WuB-nh-Pba"/>
+                        <outlet property="passwordTextField" destination="Gcr-cp-Acr" id="uGl-e3-coe"/>
+                        <outlet property="phoneTextField" destination="X2D-BJ-l9w" id="ueB-LJ-D9t"/>
+                        <outlet property="signInLabel" destination="ngV-wU-cEF" id="tIM-cw-2hd"/>
+                        <outlet property="signUpButton" destination="kci-3E-fqD" id="yXI-ga-0Wj"/>
+                        <outlet property="termAndPolicyButton" destination="hZu-5S-gUU" id="RB8-qs-6Fe"/>
+                        <outlet property="termsAndPolicyLabel" destination="pb6-0s-DnS" id="kQl-Ft-qbP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qX-d0-zS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="131"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="ngV-wU-cEF">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="pb6-0s-DnS">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="authentication-checkmark-empty" width="20" height="20"/>
+        <image name="authentication-sign-up-canlendar" width="24" height="24"/>
+        <image name="ic_eyeslash" width="24" height="24"/>
+        <namedColor name="black100">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue4789FA">
+            <color red="0.27799999713897705" green="0.53700000047683716" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayA2A2A3">
+            <color red="0.63499999046325684" green="0.63499999046325684" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white100">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteF5F5F5">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

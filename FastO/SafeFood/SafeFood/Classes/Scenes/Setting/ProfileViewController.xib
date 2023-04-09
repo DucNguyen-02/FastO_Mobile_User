@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Medium.ttf">
+            <string>Lexend-Medium</string>
+        </array>
+        <array key="Lexend-Regular.ttf">
+            <string>Lexend-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="SafeFood" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="qrA-l6-fLC" id="oht-0U-HQC"/>
+                <outlet property="birthdayTextField" destination="D88-Lp-L2T" id="c8L-7y-tz3"/>
+                <outlet property="firstNameLabel" destination="D3B-HY-dBE" id="sQg-jz-Fcw"/>
+                <outlet property="genderTextField" destination="MR0-7x-ZpH" id="J0o-LZ-XD3"/>
+                <outlet property="lastNameTextField" destination="0eT-0m-VXf" id="24T-ud-won"/>
+                <outlet property="saveButton" destination="TJC-q3-Q7L" id="PRp-at-mK5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAx-ha-wg4">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0f-rT-IkF">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fcL-UN-bou">
+                                    <rect key="frame" x="16" y="0.0" width="361" height="428"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teQ-Dk-75E">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="196"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qrA-l6-fLC" customClass="BaseImageView" customModule="SafeFood" customModuleProvider="target">
+                                                    <rect key="frame" x="90.666666666666686" y="8" width="180" height="180"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="180" id="Bwr-Ju-uzw"/>
+                                                        <constraint firstAttribute="width" constant="180" id="T8d-Ez-Jpi"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="90"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="qrA-l6-fLC" secondAttribute="bottom" constant="8" id="gMq-mR-PZz"/>
+                                                <constraint firstItem="qrA-l6-fLC" firstAttribute="centerX" secondItem="teQ-Dk-75E" secondAttribute="centerX" id="nTa-Is-57d"/>
+                                                <constraint firstItem="qrA-l6-fLC" firstAttribute="top" secondItem="teQ-Dk-75E" secondAttribute="top" constant="8" id="yR8-lu-pNa"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0DJ-iN-JNs">
+                                            <rect key="frame" x="0.0" y="204" width="361" height="34"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF1-Kq-Gi8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="87" height="34"/>
+                                                    <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="16"/>
+                                                    <color key="textColor" name="black100"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter to your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-HY-dBE" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                    <rect key="frame" x="95" y="0.0" width="266" height="34"/>
+                                                    <color key="textColor" name="gray737374"/>
+                                                    <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zdK-lv-U9U">
+                                            <rect key="frame" x="0.0" y="246" width="361" height="34"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVi-OR-RWf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="87" height="34"/>
+                                                    <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="16"/>
+                                                    <color key="textColor" name="black100"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter to your last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0eT-0m-VXf" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                    <rect key="frame" x="95" y="0.0" width="266" height="34"/>
+                                                    <color key="textColor" name="gray737374"/>
+                                                    <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vP2-zq-fN7">
+                                            <rect key="frame" x="0.0" y="288" width="361" height="34"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95C-Ig-hnW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="87" height="34"/>
+                                                    <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="16"/>
+                                                    <color key="textColor" name="black100"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose your birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D88-Lp-L2T" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                    <rect key="frame" x="95" y="0.0" width="266" height="34"/>
+                                                    <color key="textColor" name="gray737374"/>
+                                                    <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aob-y2-ST8">
+                                            <rect key="frame" x="0.0" y="330" width="361" height="34"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkz-XS-xnU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="87" height="34"/>
+                                                    <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="16"/>
+                                                    <color key="textColor" name="black100"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Female / Male / Orther" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MR0-7x-ZpH" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                    <rect key="frame" x="95" y="0.0" width="266" height="34"/>
+                                                    <color key="textColor" name="gray737374"/>
+                                                    <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIS-H2-VgY">
+                                            <rect key="frame" x="0.0" y="372" width="361" height="56"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJC-q3-Q7L" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="16" width="361" height="40"/>
+                                                    <color key="backgroundColor" name="blue4789FA"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="kQi-di-1ef"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="18"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Save">
+                                                        <color key="titleColor" name="white100"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="saveButtonTapped:" destination="-1" eventType="touchUpInside" id="rBe-e2-fYF"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="TJC-q3-Q7L" firstAttribute="top" secondItem="YIS-H2-VgY" secondAttribute="top" constant="16" id="Jph-a6-iRF"/>
+                                                <constraint firstAttribute="bottom" secondItem="TJC-q3-Q7L" secondAttribute="bottom" id="NzB-gR-Bz4"/>
+                                                <constraint firstItem="TJC-q3-Q7L" firstAttribute="leading" secondItem="YIS-H2-VgY" secondAttribute="leading" id="Zfx-fX-YPK"/>
+                                                <constraint firstAttribute="trailing" secondItem="TJC-q3-Q7L" secondAttribute="trailing" id="hC1-9I-fKP"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="D88-Lp-L2T" firstAttribute="leading" secondItem="0eT-0m-VXf" secondAttribute="leading" id="KVG-qS-2VD"/>
+                                        <constraint firstItem="MR0-7x-ZpH" firstAttribute="leading" secondItem="D88-Lp-L2T" secondAttribute="leading" id="Mjs-dr-vO2"/>
+                                        <constraint firstItem="0eT-0m-VXf" firstAttribute="leading" secondItem="D3B-HY-dBE" secondAttribute="leading" id="d0B-2T-hZS"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="fcL-UN-bou" firstAttribute="leading" secondItem="b0f-rT-IkF" secondAttribute="leading" constant="16" id="Jfa-Rw-bHw"/>
+                                <constraint firstItem="fcL-UN-bou" firstAttribute="top" secondItem="b0f-rT-IkF" secondAttribute="top" id="slG-Pk-rlX"/>
+                                <constraint firstAttribute="trailing" secondItem="fcL-UN-bou" secondAttribute="trailing" constant="16" id="zGv-Qh-j9k"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="b0f-rT-IkF" firstAttribute="leading" secondItem="Fkr-5C-cbP" secondAttribute="leading" id="7Fq-EY-gFu"/>
+                        <constraint firstItem="b0f-rT-IkF" firstAttribute="height" secondItem="IQ4-kS-F04" secondAttribute="height" id="7HV-B5-0K6"/>
+                        <constraint firstItem="b0f-rT-IkF" firstAttribute="bottom" secondItem="Fkr-5C-cbP" secondAttribute="bottom" id="E78-c4-n2r"/>
+                        <constraint firstItem="b0f-rT-IkF" firstAttribute="trailing" secondItem="Fkr-5C-cbP" secondAttribute="trailing" id="HzK-PP-1aA"/>
+                        <constraint firstItem="b0f-rT-IkF" firstAttribute="width" secondItem="IQ4-kS-F04" secondAttribute="width" id="KmD-1t-02C"/>
+                        <constraint firstItem="Fkr-5C-cbP" firstAttribute="top" secondItem="b0f-rT-IkF" secondAttribute="top" id="ZaO-IQ-Dys"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Fkr-5C-cbP"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="IQ4-kS-F04"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="white100"/>
+            <constraints>
+                <constraint firstItem="TAx-ha-wg4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3az-uD-TQg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TAx-ha-wg4" secondAttribute="trailing" id="Ddv-WE-v4a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TAx-ha-wg4" secondAttribute="bottom" id="s5j-e6-zPZ"/>
+                <constraint firstItem="TAx-ha-wg4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uno-LQ-itD"/>
+            </constraints>
+            <point key="canvasLocation" x="-54" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="black100">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue4789FA">
+            <color red="0.27799999713897705" green="0.53700000047683716" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray737374">
+            <color red="0.45100000500679016" green="0.45100000500679016" blue="0.45500001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white100">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
