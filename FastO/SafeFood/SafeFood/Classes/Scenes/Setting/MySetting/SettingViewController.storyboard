@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Medium.ttf">
+            <string>Lexend-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Setting View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SettingViewController" customModule="SafeFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yuR-Po-zTN" customClass="BaseImageView" customModule="SafeFood" customModuleProvider="target">
+                                <rect key="frame" x="117" y="64" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="SsL-fb-BYc"/>
+                                    <constraint firstAttribute="width" secondItem="yuR-Po-zTN" secondAttribute="height" multiplier="1:1" id="mn0-ke-bgV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Le Gia Anh Khoa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCh-lt-Gvq">
+                                <rect key="frame" x="133.5" y="260" width="147" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="18"/>
+                                <color key="textColor" name="black100"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="T2Q-fE-dpi">
+                                <rect key="frame" x="16" y="322.5" width="382" height="218"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Ce8-2g-8MO">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_user" translatesAutoresizingMaskIntoConstraints="NO" id="22L-fG-5Yw">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="Slv-ay-aoQ"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Srq-No-8Dl"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MV1-tX-NjQ">
+                                                <rect key="frame" x="72" y="0.0" width="310" height="40"/>
+                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="16"/>
+                                                <color key="textColor" name="black100"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOh-HK-LPK">
+                                        <rect key="frame" x="0.0" y="48" width="382" height="0.5"/>
+                                        <color key="backgroundColor" name="grayA2A2A3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="fib-ZF-FeW"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="veU-Dj-E4S">
+                                        <rect key="frame" x="0.0" y="56.5" width="382" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-change-password" translatesAutoresizingMaskIntoConstraints="NO" id="FRK-UM-2fR">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="tintColor" name="black100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Pvh-d7-UPJ"/>
+                                                    <constraint firstAttribute="width" constant="40" id="pCa-ww-DC7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJ8-Eb-B7E">
+                                                <rect key="frame" x="72" y="0.0" width="310" height="40"/>
+                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="16"/>
+                                                <color key="textColor" name="black100"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKQ-S8-rJx">
+                                        <rect key="frame" x="0.0" y="104.5" width="382" height="0.5"/>
+                                        <color key="backgroundColor" name="grayA2A2A3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="ydx-fp-b3b"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="adJ-Ql-wQW">
+                                        <rect key="frame" x="0.0" y="113" width="382" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-language" translatesAutoresizingMaskIntoConstraints="NO" id="hH8-x0-9on">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="tintColor" name="black100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="YhU-D9-mYx"/>
+                                                    <constraint firstAttribute="height" constant="40" id="sKu-Fo-3Uc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gS-ry-CcA">
+                                                <rect key="frame" x="72" y="0.0" width="150" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="vXg-sb-GSl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="16"/>
+                                                <color key="textColor" name="black100"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjU-zX-kWV">
+                                                <rect key="frame" x="254" y="0.0" width="128" height="40"/>
+                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="16"/>
+                                                <color key="textColor" name="gray737374"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBD-Yz-WOd">
+                                        <rect key="frame" x="0.0" y="161" width="382" height="0.5"/>
+                                        <color key="backgroundColor" name="grayA2A2A3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="YnT-aU-p0w"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Lr8-fG-zMW">
+                                        <rect key="frame" x="0.0" y="169.5" width="382" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_help" translatesAutoresizingMaskIntoConstraints="NO" id="2k0-rd-bgH">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="5VE-US-vvn"/>
+                                                    <constraint firstAttribute="width" constant="40" id="Pe0-y7-7cd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tej-2a-ikE">
+                                                <rect key="frame" x="72" y="0.0" width="310" height="40"/>
+                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="16"/>
+                                                <color key="textColor" name="black100"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLQ-ct-oQf">
+                                        <rect key="frame" x="0.0" y="217.5" width="382" height="0.5"/>
+                                        <color key="backgroundColor" name="grayA2A2A3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="4w2-uu-K9A"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOT-rk-GA3" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                <rect key="frame" x="16" y="790" width="382" height="40"/>
+                                <color key="backgroundColor" name="blue4789FA"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eOk-Ld-YpA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sign Out"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signOutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2l-Ne-c1L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="white100"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NOT-rk-GA3" secondAttribute="trailing" constant="16" id="2ML-E9-hfn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NOT-rk-GA3" secondAttribute="bottom" constant="32" id="CWy-B2-Zp9"/>
+                            <constraint firstItem="yuR-Po-zTN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IGe-uq-kdx"/>
+                            <constraint firstItem="T2Q-fE-dpi" firstAttribute="top" secondItem="RCh-lt-Gvq" secondAttribute="bottom" constant="40" id="JBD-kH-6V3"/>
+                            <constraint firstItem="T2Q-fE-dpi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NaM-MR-kTO"/>
+                            <constraint firstItem="RCh-lt-Gvq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Th7-OF-5EO"/>
+                            <constraint firstItem="T2Q-fE-dpi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="XVs-ZL-9EF"/>
+                            <constraint firstItem="NOT-rk-GA3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dqT-ko-PBW"/>
+                            <constraint firstItem="RCh-lt-Gvq" firstAttribute="top" secondItem="yuR-Po-zTN" secondAttribute="bottom" constant="16" id="hoT-zB-wHl"/>
+                            <constraint firstItem="yuR-Po-zTN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="wtq-pb-5dz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accountView" destination="Ce8-2g-8MO" id="vek-ZF-zUY"/>
+                        <outlet property="avatarImageView" destination="yuR-Po-zTN" id="i0L-nx-lpI"/>
+                        <outlet property="changePasswordView" destination="veU-Dj-E4S" id="ycg-Hh-FGL"/>
+                        <outlet property="helpView" destination="Lr8-fG-zMW" id="d8x-Wq-AhK"/>
+                        <outlet property="languageView" destination="adJ-Ql-wQW" id="bv0-rI-E15"/>
+                        <outlet property="nameUserLabel" destination="RCh-lt-Gvq" id="L0D-8t-ARD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic-change-password" width="24" height="24"/>
+        <image name="ic-language" width="24" height="24"/>
+        <image name="ic_help" width="24" height="24"/>
+        <image name="ic_user" width="24" height="24"/>
+        <namedColor name="black100">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue4789FA">
+            <color red="0.27799999713897705" green="0.53700000047683716" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray737374">
+            <color red="0.45100000500679016" green="0.45100000500679016" blue="0.45500001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayA2A2A3">
+            <color red="0.63499999046325684" green="0.63499999046325684" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white100">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

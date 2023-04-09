@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Regular.ttf">
+            <string>Lexend-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="SafeFoodTabTitleItem" customModule="SafeFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="468" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="468" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebn-D1-5Pw">
+                        <rect key="frame" x="218.5" y="27.5" width="31" height="15"/>
+                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="al9-iW-jEN">
+                        <rect key="frame" x="0.0" y="68" width="468" height="2"/>
+                        <color key="backgroundColor" name="grayE8E8E8"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="vQQ-JG-2Ee"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Ebn-D1-5Pw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="BCN-E4-U7j"/>
+                <constraint firstItem="al9-iW-jEN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Lsi-fl-zXp"/>
+                <constraint firstAttribute="bottom" secondItem="al9-iW-jEN" secondAttribute="bottom" id="P11-rm-5aR"/>
+                <constraint firstItem="Ebn-D1-5Pw" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Ux5-IB-HsY"/>
+                <constraint firstAttribute="trailing" secondItem="al9-iW-jEN" secondAttribute="trailing" id="fdH-ed-2AK"/>
+            </constraints>
+            <size key="customSize" width="468" height="70"/>
+            <connections>
+                <outlet property="seperatorView" destination="al9-iW-jEN" id="RcE-y4-OK0"/>
+                <outlet property="titleLabel" destination="Ebn-D1-5Pw" id="7Jn-EV-3zW"/>
+            </connections>
+            <point key="canvasLocation" x="395.6521739130435" y="60.267857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="grayE8E8E8">
+            <color red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Medium.ttf">
+            <string>Lexend-Medium</string>
+        </array>
+        <array key="Lexend-Regular.ttf">
+            <string>Lexend-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Digit Verify Code View Controller-->
+        <scene sceneID="1xP-AW-SC6">
+            <objects>
+                <viewController storyboardIdentifier="DigitVerifyCodeViewController" id="r3H-iw-6UR" customClass="DigitVerifyCodeViewController" customModule="SafeFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RtL-PG-XUu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcE-1Y-bPc">
+                                <rect key="frame" x="0.0" y="576" width="414" height="320"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQk-Dj-A13">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOX-Ca-KUA" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="10.5" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="AIy-tw-7Wa"/>
+                                                    <constraint firstAttribute="height" constant="35" id="qkG-5R-0DX"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_close"/>
+                                                <connections>
+                                                    <action selector="closeButtonTapped:" destination="r3H-iw-6UR" eventType="touchUpInside" id="4nF-Fu-YEq"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGIT VERIFY CODE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qa-Kc-4Di">
+                                                <rect key="frame" x="55" y="18.5" width="304" height="19"/>
+                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="16"/>
+                                                <color key="textColor" name="black1A1A1A"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="1Qa-Kc-4Di" firstAttribute="leading" secondItem="VOX-Ca-KUA" secondAttribute="trailing" constant="4" id="2CJ-Yf-ssW"/>
+                                            <constraint firstItem="VOX-Ca-KUA" firstAttribute="centerY" secondItem="GQk-Dj-A13" secondAttribute="centerY" id="76P-8E-2B4"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Qa-Kc-4Di" secondAttribute="trailing" constant="55" id="ai3-ay-JjF"/>
+                                            <constraint firstItem="VOX-Ca-KUA" firstAttribute="leading" secondItem="GQk-Dj-A13" secondAttribute="leading" constant="16" id="ifS-4G-ctd"/>
+                                            <constraint firstAttribute="height" constant="56" id="q7M-wH-w8T"/>
+                                            <constraint firstItem="1Qa-Kc-4Di" firstAttribute="centerY" secondItem="GQk-Dj-A13" secondAttribute="centerY" id="yl0-P7-OA0"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnH-HZ-bP9">
+                                        <rect key="frame" x="0.0" y="56" width="414" height="1"/>
+                                        <color key="backgroundColor" name="grayD9D9D9"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="S5D-wc-XRm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oe-Fp-VpJ">
+                                        <rect key="frame" x="0.0" y="57" width="414" height="263"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rlo-SI-BH9">
+                                                <rect key="frame" x="16" y="16" width="382" height="123.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the 6-digit verification code sent to kimhoangle.23022000@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRE-op-VpT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="42"/>
+                                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="- - - - - -" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VNU-EN-61L" customClass="BaseTextField" customModule="SafeFood" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="42" width="382" height="65"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="65" id="HA7-DJ-V3P"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="black100"/>
+                                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="40"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                <integer key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcM-Cj-wSK">
+                                                        <rect key="frame" x="0.0" y="107" width="382" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                        <color key="textColor" name="blue4789FA"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AKT-ct-bzc" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="139.5" width="382" height="43.5"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Resend code">
+                                                            <attributes>
+                                                                <font key="NSFont" size="16" name="Lexend-Regular"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="resendCodeTapped:" destination="r3H-iw-6UR" eventType="touchUpInside" id="JaH-DG-J00"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZl-2c-3NO" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="191" width="382" height="40"/>
+                                                <color key="backgroundColor" name="blue4789FA"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="jdR-p5-dxx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="16"/>
+                                                <state key="normal" title="Confirm">
+                                                    <color key="titleColor" name="white100"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="confirmButtonTapped:" destination="r3H-iw-6UR" eventType="touchUpInside" id="E1i-YH-7cN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="white100"/>
+                                        <constraints>
+                                            <constraint firstItem="mZl-2c-3NO" firstAttribute="top" secondItem="AKT-ct-bzc" secondAttribute="bottom" constant="8" id="0d7-4G-xDI"/>
+                                            <constraint firstItem="mZl-2c-3NO" firstAttribute="leading" secondItem="5oe-Fp-VpJ" secondAttribute="leading" constant="16" id="Alb-i6-xZS"/>
+                                            <constraint firstAttribute="trailing" secondItem="AKT-ct-bzc" secondAttribute="trailing" constant="16" id="Opb-D0-RdE"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rlo-SI-BH9" secondAttribute="trailing" constant="16" id="PGR-gN-4nN"/>
+                                            <constraint firstItem="AKT-ct-bzc" firstAttribute="top" secondItem="Rlo-SI-BH9" secondAttribute="bottom" id="Vgl-bP-UFz"/>
+                                            <constraint firstItem="Rlo-SI-BH9" firstAttribute="leading" secondItem="5oe-Fp-VpJ" secondAttribute="leading" constant="16" id="etx-KB-QgB"/>
+                                            <constraint firstItem="AKT-ct-bzc" firstAttribute="leading" secondItem="5oe-Fp-VpJ" secondAttribute="leading" constant="16" id="fPa-7T-fZD"/>
+                                            <constraint firstAttribute="trailing" secondItem="mZl-2c-3NO" secondAttribute="trailing" constant="16" id="ivD-69-9sL"/>
+                                            <constraint firstItem="Rlo-SI-BH9" firstAttribute="top" secondItem="5oe-Fp-VpJ" secondAttribute="top" constant="16" id="q8e-aK-Jfz"/>
+                                            <constraint firstAttribute="bottom" secondItem="mZl-2c-3NO" secondAttribute="bottom" constant="32" id="riX-HD-Fmn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="white100"/>
+                                <constraints>
+                                    <constraint firstItem="MnH-HZ-bP9" firstAttribute="top" secondItem="GQk-Dj-A13" secondAttribute="bottom" id="4EI-bR-zgy"/>
+                                    <constraint firstAttribute="bottom" secondItem="5oe-Fp-VpJ" secondAttribute="bottom" id="4un-tY-afj"/>
+                                    <constraint firstItem="GQk-Dj-A13" firstAttribute="top" secondItem="EcE-1Y-bPc" secondAttribute="top" id="9A9-y1-i7E"/>
+                                    <constraint firstAttribute="trailing" secondItem="MnH-HZ-bP9" secondAttribute="trailing" id="ApB-iq-gcn"/>
+                                    <constraint firstItem="MnH-HZ-bP9" firstAttribute="leading" secondItem="EcE-1Y-bPc" secondAttribute="leading" id="ECm-Pi-em0"/>
+                                    <constraint firstItem="MnH-HZ-bP9" firstAttribute="leading" secondItem="EcE-1Y-bPc" secondAttribute="leading" id="H8l-Am-4f9"/>
+                                    <constraint firstItem="MnH-HZ-bP9" firstAttribute="top" secondItem="GQk-Dj-A13" secondAttribute="bottom" id="KMn-tQ-ewY"/>
+                                    <constraint firstItem="GQk-Dj-A13" firstAttribute="leading" secondItem="EcE-1Y-bPc" secondAttribute="leading" id="MHc-6S-oTr"/>
+                                    <constraint firstAttribute="trailing" secondItem="5oe-Fp-VpJ" secondAttribute="trailing" id="MTi-Hj-5kM"/>
+                                    <constraint firstItem="5oe-Fp-VpJ" firstAttribute="top" secondItem="MnH-HZ-bP9" secondAttribute="bottom" id="PqG-4o-kGO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" id="TjC-2x-9uU"/>
+                                    <constraint firstAttribute="trailing" secondItem="MnH-HZ-bP9" secondAttribute="trailing" id="ZKX-v2-VTH"/>
+                                    <constraint firstItem="5oe-Fp-VpJ" firstAttribute="top" secondItem="MnH-HZ-bP9" secondAttribute="bottom" id="bgC-dT-3p8"/>
+                                    <constraint firstAttribute="trailing" secondItem="GQk-Dj-A13" secondAttribute="trailing" id="f1N-ow-cJD"/>
+                                    <constraint firstItem="5oe-Fp-VpJ" firstAttribute="leading" secondItem="EcE-1Y-bPc" secondAttribute="leading" id="jZg-bm-Bvi"/>
+                                    <constraint firstItem="5oe-Fp-VpJ" firstAttribute="top" secondItem="MnH-HZ-bP9" secondAttribute="bottom" id="rQe-ZK-P24"/>
+                                    <constraint firstAttribute="bottom" secondItem="5oe-Fp-VpJ" secondAttribute="bottom" id="xqo-JZ-r3b"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OSD-JQ-3pS"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EcE-1Y-bPc" firstAttribute="leading" secondItem="OSD-JQ-3pS" secondAttribute="leading" id="0Os-a6-47N"/>
+                            <constraint firstAttribute="bottom" secondItem="EcE-1Y-bPc" secondAttribute="bottom" id="Duh-5X-ZG8"/>
+                            <constraint firstItem="EcE-1Y-bPc" firstAttribute="trailing" secondItem="OSD-JQ-3pS" secondAttribute="trailing" id="UoU-3v-KHq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="codeTextField" destination="VNU-EN-61L" id="kFW-kf-mHL"/>
+                        <outlet property="confirmButton" destination="mZl-2c-3NO" id="cxV-5H-cL4"/>
+                        <outlet property="countDownLabel" destination="xcM-Cj-wSK" id="wtR-E6-y5b"/>
+                        <outlet property="localizedGuideLabel" destination="KRE-op-VpT" id="K7X-cT-mYW"/>
+                        <outlet property="localizedNameScreenLabel" destination="1Qa-Kc-4Di" id="RAD-WF-BeN"/>
+                        <outlet property="resendButton" destination="AKT-ct-bzc" id="qfW-cL-e1c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="er5-7c-Mcu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120.28985507246378" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_close" width="24" height="24"/>
+        <namedColor name="black100">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black1A1A1A">
+            <color red="0.10199999809265137" green="0.10199999809265137" blue="0.10199999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue4789FA">
+            <color red="0.27799999713897705" green="0.53700000047683716" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayD9D9D9">
+            <color red="0.85100001096725464" green="0.85100001096725464" blue="0.85100001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white100">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Bold.ttf">
+            <string>Lexend-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Location View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LocationViewController" id="Y6W-OH-hqX" customClass="LocationViewController" customModule="SafeFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jtU-dy-2R8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFa-EY-xnq" userLabel="Nav View">
+                                <rect key="frame" x="0.0" y="58" width="414" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIH-oD-2oF">
+                                        <rect key="frame" x="16" y="9.5" width="89.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="Lexend-Bold" family="Lexend" pointSize="20"/>
+                                        <color key="textColor" name="black100"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20X-lT-eta">
+                                        <rect key="frame" x="354" y="2" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="mYW-lb-4w8"/>
+                                            <constraint firstAttribute="height" constant="40" id="pdz-UH-ava"/>
+                                        </constraints>
+                                        <color key="tintColor" name="black100"/>
+                                        <state key="normal" image="ic_located"/>
+                                        <connections>
+                                            <action selector="locatedButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FqK-GC-3As"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dH6-tW-qsx">
+                                        <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                        <color key="backgroundColor" name="grayA2A2A3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="9oK-sx-6c3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dH6-tW-qsx" secondAttribute="bottom" id="UhX-6Y-PnP"/>
+                                    <constraint firstItem="dH6-tW-qsx" firstAttribute="leading" secondItem="DFa-EY-xnq" secondAttribute="leading" id="VV1-Ic-YAh"/>
+                                    <constraint firstItem="20X-lT-eta" firstAttribute="centerY" secondItem="DFa-EY-xnq" secondAttribute="centerY" id="Yhe-gH-2qp"/>
+                                    <constraint firstAttribute="trailing" secondItem="20X-lT-eta" secondAttribute="trailing" constant="20" id="ZWC-1Q-hHW"/>
+                                    <constraint firstAttribute="trailing" secondItem="dH6-tW-qsx" secondAttribute="trailing" id="iLF-CJ-2bg"/>
+                                    <constraint firstItem="yIH-oD-2oF" firstAttribute="centerY" secondItem="DFa-EY-xnq" secondAttribute="centerY" id="oXa-sg-1CD"/>
+                                    <constraint firstItem="yIH-oD-2oF" firstAttribute="leading" secondItem="DFa-EY-xnq" secondAttribute="leading" constant="16" id="qKw-I7-4Xs"/>
+                                    <constraint firstAttribute="height" constant="44" id="xap-cF-rvM"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iMb-yj-rZu">
+                                <rect key="frame" x="0.0" y="102" width="414" height="760"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nKf-M7-PhQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DFa-EY-xnq" firstAttribute="trailing" secondItem="nKf-M7-PhQ" secondAttribute="trailing" id="BeY-Rs-zl8"/>
+                            <constraint firstItem="DFa-EY-xnq" firstAttribute="top" secondItem="nKf-M7-PhQ" secondAttribute="top" constant="10" id="DKI-y0-LCi"/>
+                            <constraint firstItem="iMb-yj-rZu" firstAttribute="leading" secondItem="nKf-M7-PhQ" secondAttribute="leading" id="LH0-Le-KfD"/>
+                            <constraint firstItem="iMb-yj-rZu" firstAttribute="top" secondItem="DFa-EY-xnq" secondAttribute="bottom" id="LWi-XH-lvd"/>
+                            <constraint firstItem="nKf-M7-PhQ" firstAttribute="trailing" secondItem="iMb-yj-rZu" secondAttribute="trailing" id="Mfd-r7-NoF"/>
+                            <constraint firstItem="DFa-EY-xnq" firstAttribute="leading" secondItem="nKf-M7-PhQ" secondAttribute="leading" id="tPj-Pf-OHA"/>
+                            <constraint firstItem="nKf-M7-PhQ" firstAttribute="bottom" secondItem="iMb-yj-rZu" secondAttribute="bottom" id="xL2-1u-aOy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="iMb-yj-rZu" id="8Fp-Xc-WRX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_located" width="24" height="24"/>
+        <namedColor name="black100">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayA2A2A3">
+            <color red="0.63499999046325684" green="0.63499999046325684" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

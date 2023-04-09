@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunGothic-Bold.ttf">
+            <string>NanumBarunGothicBold</string>
+        </array>
+        <array key="NanumBarunGothic-Regular.ttf">
+            <string>NanumBarunGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrandInformationView" customModule="AppPass" customModuleProvider="target">
+            <connections>
+                <outlet property="brandDescription" destination="Nes-3y-ais" id="IHu-la-5u0"/>
+                <outlet property="brandImageView" destination="IMv-lC-FY8" id="VqK-lS-DPu"/>
+                <outlet property="brandName" destination="h5v-7u-ltF" id="AKk-lq-pe3"/>
+                <outlet property="ratingView" destination="E7X-ta-vrI" id="FOv-s3-yid"/>
+                <outlet property="totalReview" destination="alb-nL-I9U" id="nxf-jZ-fV4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_congcaphe" translatesAutoresizingMaskIntoConstraints="NO" id="IMv-lC-FY8" customClass="BaseImageView" customModule="AppPass" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="90" height="118"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="YTr-wC-xfr"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hvL-9a-X3G">
+                    <rect key="frame" x="102" y="0.0" width="158" height="90"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37U-WF-XRn">
+                            <rect key="frame" x="0.0" y="0.0" width="158" height="50"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oDd-kn-DtF">
+                                    <rect key="frame" x="0.0" y="8" width="158" height="42"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radisson Hotel Danang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5v-7u-ltF">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="cBN-6Z-VpE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="12"/>
+                                            <color key="textColor" name="black100"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vxl-UB-XOe">
+                                            <rect key="frame" x="0.0" y="30" width="158" height="12"/>
+                                            <subviews>
+                                                <view contentMode="scaleAspectFit" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="E7X-ta-vrI" customClass="HCSStarRatingView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="12"/>
+                                                    <viewLayoutGuide key="safeArea" id="KP6-Y7-bLM"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" name="yellowFFCF6F"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="12" id="4mz-Ha-alh"/>
+                                                        <constraint firstAttribute="width" constant="64" id="ESz-zr-1xI"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="filledStarImage" value="ic-fill-star"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="emptyStarImage" value="ic-empty-star"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="halfStarImage" value="ic-halfstar"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="allowsHalfStars" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="accurateHalfStars" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공무 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alb-nL-I9U">
+                                                    <rect key="frame" x="69" y="0.0" width="89" height="12"/>
+                                                    <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="10"/>
+                                                    <color key="textColor" name="gray737374"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="oDd-kn-DtF" secondAttribute="trailing" id="31M-Ga-qla"/>
+                                <constraint firstItem="oDd-kn-DtF" firstAttribute="leading" secondItem="37U-WF-XRn" secondAttribute="leading" id="FfP-ue-lqz"/>
+                                <constraint firstItem="oDd-kn-DtF" firstAttribute="top" secondItem="37U-WF-XRn" secondAttribute="top" constant="8" id="QEY-BP-Bop"/>
+                                <constraint firstAttribute="bottom" secondItem="oDd-kn-DtF" secondAttribute="bottom" id="YAf-rT-M2S"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공무원의 신분과 정 공무공무의 분과 정 무" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nes-3y-ais">
+                            <rect key="frame" x="0.0" y="62" width="158" height="28"/>
+                            <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="12"/>
+                            <color key="textColor" name="gray737374"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Nes-3y-ais" secondAttribute="bottom" id="zaN-77-anb"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="IMv-lC-FY8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Djm-5X-1Z5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hvL-9a-X3G" secondAttribute="trailing" id="FrD-GN-cPe"/>
+                <constraint firstItem="IMv-lC-FY8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="M7O-jT-Px3"/>
+                <constraint firstItem="hvL-9a-X3G" firstAttribute="leading" secondItem="IMv-lC-FY8" secondAttribute="trailing" constant="12" id="Z9b-hd-UU3"/>
+                <constraint firstItem="hvL-9a-X3G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fTE-dg-W7H"/>
+                <constraint firstAttribute="bottom" secondItem="IMv-lC-FY8" secondAttribute="bottom" id="hSS-t6-S1v"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hvL-9a-X3G" secondAttribute="bottom" id="zjd-6R-kcR"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="5" y="-215"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="E7X-ta-vrI">
+            <size key="intrinsicContentSize" width="228" height="44"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic-empty-star" width="11" height="11"/>
+        <image name="ic-fill-star" width="12" height="12"/>
+        <image name="ic-halfstar" width="12" height="12"/>
+        <image name="ic_congcaphe" width="120" height="90"/>
+        <namedColor name="black100">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray737374">
+            <color red="0.45098039215686275" green="0.45098039215686275" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yellowFFCF6F">
+            <color red="1" green="0.81176470588235294" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

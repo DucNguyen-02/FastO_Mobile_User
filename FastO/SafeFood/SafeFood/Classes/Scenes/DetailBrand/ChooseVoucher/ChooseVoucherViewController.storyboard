@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Medium.ttf">
+            <string>Lexend-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Choose Voucher View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ChooseVoucherViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ChooseVoucherViewController" customModule="SafeFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4sh-xd-5ry" customClass="BaseTableView" customModule="SafeFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48" width="414" height="767.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgJ-co-Yyo">
+                                <rect key="frame" x="0.0" y="815.5" width="414" height="80.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RlS-3i-Fa6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.5"/>
+                                        <color key="backgroundColor" name="grayA2A2A3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="2On-UG-AtF"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Wdv-fy-ofR">
+                                        <rect key="frame" x="16" y="8.5" width="382" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uT0-uz-5KU" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                                                <color key="backgroundColor" name="blue4789FA"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="pUL-Eh-CIP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="14"/>
+                                                <state key="normal" title="Continue">
+                                                    <color key="titleColor" name="white100"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PM8-6U-ZPY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Wdv-fy-ofR" firstAttribute="top" secondItem="RlS-3i-Fa6" secondAttribute="bottom" constant="8" id="GlE-bS-GtF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wdv-fy-ofR" secondAttribute="bottom" constant="32" id="Hcd-ln-BPL"/>
+                                    <constraint firstAttribute="trailing" secondItem="RlS-3i-Fa6" secondAttribute="trailing" id="db8-fh-kW6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wdv-fy-ofR" secondAttribute="trailing" constant="16" id="eno-Xw-Ldh"/>
+                                    <constraint firstItem="Wdv-fy-ofR" firstAttribute="leading" secondItem="EgJ-co-Yyo" secondAttribute="leading" constant="16" id="jPN-3R-c3w"/>
+                                    <constraint firstItem="RlS-3i-Fa6" firstAttribute="top" secondItem="EgJ-co-Yyo" secondAttribute="top" id="wcW-Cn-8Qf"/>
+                                    <constraint firstItem="RlS-3i-Fa6" firstAttribute="leading" secondItem="EgJ-co-Yyo" secondAttribute="leading" id="zka-U9-Jje"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="white100"/>
+                        <constraints>
+                            <constraint firstItem="EgJ-co-Yyo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cj9-X3-UDk"/>
+                            <constraint firstItem="EgJ-co-Yyo" firstAttribute="top" secondItem="4sh-xd-5ry" secondAttribute="bottom" id="Ea0-4f-Uvx"/>
+                            <constraint firstItem="4sh-xd-5ry" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ILz-K5-aRC"/>
+                            <constraint firstAttribute="bottom" secondItem="EgJ-co-Yyo" secondAttribute="bottom" id="XS8-s0-LA8"/>
+                            <constraint firstItem="4sh-xd-5ry" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cmy-QB-63M"/>
+                            <constraint firstItem="4sh-xd-5ry" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oFp-fB-oZ5"/>
+                            <constraint firstItem="EgJ-co-Yyo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oZd-JC-Uso"/>
+                            <constraint firstItem="EgJ-co-Yyo" firstAttribute="top" secondItem="4sh-xd-5ry" secondAttribute="bottom" id="sde-qY-vog"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="uT0-uz-5KU" id="8Bp-OQ-djx"/>
+                        <outlet property="tableView" destination="4sh-xd-5ry" id="6nO-L8-jNd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="blue4789FA">
+            <color red="0.27799999713897705" green="0.53700000047683716" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayA2A2A3">
+            <color red="0.63499999046325684" green="0.63499999046325684" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white100">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

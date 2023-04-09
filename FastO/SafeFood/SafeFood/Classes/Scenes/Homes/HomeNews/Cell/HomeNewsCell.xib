@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunGothic-Bold.ttf">
+            <string>NanumBarunGothicBold</string>
+        </array>
+        <array key="NanumBarunGothic-Regular.ttf">
+            <string>NanumBarunGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeNewsCell" customModule="SafeFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="306"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="313" height="306"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9NL-EF-eAd" customClass="BaseImageView" customModule="SafeFood" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="313" height="306"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_news_gradient" translatesAutoresizingMaskIntoConstraints="NO" id="DNs-Bp-UlC">
+                        <rect key="frame" x="0.0" y="0.0" width="313" height="90"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="955-In-8s7">
+                        <rect key="frame" x="16" y="15" width="281" height="50.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맛있는 음식" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLr-MS-53y">
+                                <rect key="frame" x="0.0" y="0.0" width="281" height="23.5"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="20"/>
+                                <color key="textColor" name="white100"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="집에서 베이컨 요리하는 법" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rw5-8D-Eup">
+                                <rect key="frame" x="0.0" y="31.5" width="281" height="19"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
+                                <color key="textColor" name="white100"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCR-qC-DUX" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="313" height="306"/>
+                        <connections>
+                            <action selector="ClickTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="sZu-Zq-ym7"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="955-In-8s7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="4K3-H1-S38"/>
+                <constraint firstAttribute="bottom" secondItem="9NL-EF-eAd" secondAttribute="bottom" id="89i-yq-a6P"/>
+                <constraint firstItem="9NL-EF-eAd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Cvt-sU-KWK"/>
+                <constraint firstItem="DNs-Bp-UlC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KKE-mt-U8o"/>
+                <constraint firstItem="zCR-qC-DUX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MjU-NG-MJG"/>
+                <constraint firstAttribute="trailing" secondItem="DNs-Bp-UlC" secondAttribute="trailing" id="UOy-Xa-l6x"/>
+                <constraint firstItem="DNs-Bp-UlC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xxe-OW-5bn"/>
+                <constraint firstAttribute="trailing" secondItem="9NL-EF-eAd" secondAttribute="trailing" id="eoA-3X-PyF"/>
+                <constraint firstItem="zCR-qC-DUX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="msw-Lm-LwT"/>
+                <constraint firstAttribute="trailing" secondItem="955-In-8s7" secondAttribute="trailing" constant="16" id="nDf-cN-RIB"/>
+                <constraint firstItem="955-In-8s7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="pJM-dD-km7"/>
+                <constraint firstItem="9NL-EF-eAd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pL6-nW-93A"/>
+                <constraint firstAttribute="bottom" secondItem="zCR-qC-DUX" secondAttribute="bottom" id="qgI-ua-1Ha"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="955-In-8s7" secondAttribute="bottom" id="rIT-d2-yPr"/>
+                <constraint firstAttribute="trailing" secondItem="zCR-qC-DUX" secondAttribute="trailing" id="zQH-Yw-cIp"/>
+            </constraints>
+            <size key="customSize" width="313" height="306"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="18"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="newsDescriptionLabel" destination="Rw5-8D-Eup" id="cNl-Go-eMl"/>
+                <outlet property="newsImageView" destination="9NL-EF-eAd" id="6sC-HQ-Mm5"/>
+                <outlet property="newsTitleLabel" destination="ZLr-MS-53y" id="WVm-yp-HNc"/>
+            </connections>
+            <point key="canvasLocation" x="326.81159420289856" y="149.33035714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_news_gradient" width="240" height="90"/>
+        <namedColor name="white100">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

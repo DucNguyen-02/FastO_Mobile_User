@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Regular.ttf">
+            <string>Lexend-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--List Voucher View Controller-->
+        <scene sceneID="rmv-mG-fT2">
+            <objects>
+                <viewController storyboardIdentifier="ListVoucherViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ecP-3G-VlZ" customClass="ListVoucherViewController" customModule="SafeFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WzA-ch-BfV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gj7-Wm-4lZ">
+                                <rect key="frame" x="0.0" y="48" width="414" height="56"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GaM-4v-49T">
+                                        <rect key="frame" x="16" y="8" width="382" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2IM-Vc-MyQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="40"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="GUz-fZ-OGB">
+                                                        <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                                        <color key="tintColor" name="black100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="Z1n-Ln-nB5"/>
+                                                            <constraint firstAttribute="width" constant="24" id="Zwf-mF-yEk"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="GUz-fZ-OGB" firstAttribute="centerY" secondItem="2IM-Vc-MyQ" secondAttribute="centerY" id="3R7-5s-CTm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GUz-fZ-OGB" secondAttribute="trailing" id="aXL-5s-uPL"/>
+                                                    <constraint firstItem="GUz-fZ-OGB" firstAttribute="leading" secondItem="2IM-Vc-MyQ" secondAttribute="leading" constant="8" id="gdk-KH-aYT"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Let's find to shop..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yvX-bZ-zXe">
+                                                <rect key="frame" x="40" y="0.0" width="342" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Gl8-Ic-kzZ"/>
+                                                </constraints>
+                                                <color key="textColor" name="black100"/>
+                                                <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="grayA2A2A3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GaM-4v-49T" secondAttribute="bottom" constant="8" id="73x-iD-a9W"/>
+                                    <constraint firstAttribute="trailing" secondItem="GaM-4v-49T" secondAttribute="trailing" constant="16" id="7cw-4a-cjn"/>
+                                    <constraint firstItem="GaM-4v-49T" firstAttribute="top" secondItem="Gj7-Wm-4lZ" secondAttribute="top" constant="8" id="V3X-E6-Ysn"/>
+                                    <constraint firstItem="GaM-4v-49T" firstAttribute="leading" secondItem="Gj7-Wm-4lZ" secondAttribute="leading" constant="16" id="kQN-bB-OKJ"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hWY-WD-CvN">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FKc-bc-gwZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FKc-bc-gwZ" firstAttribute="trailing" secondItem="hWY-WD-CvN" secondAttribute="trailing" id="M6q-bN-tyy"/>
+                            <constraint firstItem="FKc-bc-gwZ" firstAttribute="trailing" secondItem="Gj7-Wm-4lZ" secondAttribute="trailing" id="Yxs-1r-nHV"/>
+                            <constraint firstItem="Gj7-Wm-4lZ" firstAttribute="top" secondItem="FKc-bc-gwZ" secondAttribute="top" id="bhT-ON-CuG"/>
+                            <constraint firstItem="hWY-WD-CvN" firstAttribute="top" secondItem="Gj7-Wm-4lZ" secondAttribute="bottom" id="ckz-4D-yTQ"/>
+                            <constraint firstItem="FKc-bc-gwZ" firstAttribute="bottom" secondItem="hWY-WD-CvN" secondAttribute="bottom" id="mfx-Ua-3O9"/>
+                            <constraint firstItem="Gj7-Wm-4lZ" firstAttribute="leading" secondItem="FKc-bc-gwZ" secondAttribute="leading" id="qiN-kW-0de"/>
+                            <constraint firstItem="hWY-WD-CvN" firstAttribute="leading" secondItem="FKc-bc-gwZ" secondAttribute="leading" id="xdC-Pv-Dnc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="jd8-Si-Ph0" id="uDa-R3-rhH"/>
+                        <outlet property="searchTextField" destination="yvX-bZ-zXe" id="Xck-Tx-h2v"/>
+                        <outlet property="tableView" destination="hWY-WD-CvN" id="ivU-rf-h3x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ket-w0-imn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="jd8-Si-Ph0">
+                    <connections>
+                        <outlet property="delegate" destination="ecP-3G-VlZ" id="082-zw-6yI"/>
+                        <outlet property="searchContentsController" destination="ecP-3G-VlZ" id="CvC-Nu-6Xl"/>
+                        <outlet property="searchResultsDataSource" destination="ecP-3G-VlZ" id="SL1-SE-zs5"/>
+                        <outlet property="searchResultsDelegate" destination="ecP-3G-VlZ" id="wXq-t5-iw8"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="828.98550724637687" y="58.928571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_search" width="24" height="24"/>
+        <namedColor name="black100">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayA2A2A3">
+            <color red="0.63499999046325684" green="0.63499999046325684" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

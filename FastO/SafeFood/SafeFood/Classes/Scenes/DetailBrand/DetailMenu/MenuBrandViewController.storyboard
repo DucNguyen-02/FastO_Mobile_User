@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Medium.ttf">
+            <string>Lexend-Medium</string>
+        </array>
+        <array key="Lexend-Regular.ttf">
+            <string>Lexend-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Menu Brand View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MenuBrandViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MenuBrandViewController" customModule="SafeFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F1X-vP-7IH" customClass="BaseTableView" customModule="SafeFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="755.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyl-n4-LIU">
+                                <rect key="frame" x="0.0" y="799.5" width="414" height="96.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAv-Hu-GdB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.5"/>
+                                        <color key="backgroundColor" name="grayA2A2A3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="ODh-7c-m0n"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HWc-RE-yGE">
+                                        <rect key="frame" x="16" y="8.5" width="382" height="56"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="znD-kw-RFx">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="14"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chưa có sản phẩm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAR-EL-spl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="14"/>
+                                                        <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="10"/>
+                                                        <color key="textColor" name="grayA2A2A3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8A9-vp-57j">
+                                                        <rect key="frame" x="191" y="0.0" width="191" height="14"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tổng tiền thanh toán" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ln-HX-VQh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="92.5" height="14"/>
+                                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="10"/>
+                                                                <color key="textColor" name="black100"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0VNĐ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyP-jU-p7F">
+                                                                <rect key="frame" x="159.5" y="0.0" width="31.5" height="14"/>
+                                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="12"/>
+                                                                <color key="textColor" name="black100"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDS-wK-oUu" customClass="BaseButton" customModule="SafeFood" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="16" width="382" height="40"/>
+                                                <color key="backgroundColor" name="blue4789FA"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="jgI-Tz-8wC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lexend-Medium" family="Lexend" pointSize="14"/>
+                                                <state key="normal" title="Continue">
+                                                    <color key="titleColor" name="white100"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6q-hr-jf4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="8A9-vp-57j" firstAttribute="leading" secondItem="fDS-wK-oUu" secondAttribute="centerX" id="Kd6-Tn-PFs"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="HWc-RE-yGE" secondAttribute="bottom" constant="32" id="6Y3-qk-UDv"/>
+                                    <constraint firstItem="nAv-Hu-GdB" firstAttribute="leading" secondItem="fyl-n4-LIU" secondAttribute="leading" id="GJR-gy-5xp"/>
+                                    <constraint firstItem="nAv-Hu-GdB" firstAttribute="top" secondItem="fyl-n4-LIU" secondAttribute="top" id="QzH-3F-HtS"/>
+                                    <constraint firstItem="HWc-RE-yGE" firstAttribute="leading" secondItem="fyl-n4-LIU" secondAttribute="leading" constant="16" id="UPn-iq-ZU2"/>
+                                    <constraint firstAttribute="trailing" secondItem="nAv-Hu-GdB" secondAttribute="trailing" id="ls8-6v-E3u"/>
+                                    <constraint firstItem="HWc-RE-yGE" firstAttribute="top" secondItem="nAv-Hu-GdB" secondAttribute="bottom" constant="8" id="ovE-6f-W11"/>
+                                    <constraint firstAttribute="trailing" secondItem="HWc-RE-yGE" secondAttribute="trailing" constant="16" id="zZf-YL-jc4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="white100"/>
+                        <constraints>
+                            <constraint firstItem="fyl-n4-LIU" firstAttribute="top" secondItem="F1X-vP-7IH" secondAttribute="bottom" id="7jX-ge-TXh"/>
+                            <constraint firstItem="F1X-vP-7IH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8LY-Mi-8i8"/>
+                            <constraint firstItem="fyl-n4-LIU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AiS-97-JZU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fyl-n4-LIU" secondAttribute="trailing" id="Voc-iP-UQ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F1X-vP-7IH" secondAttribute="trailing" id="fbt-Yp-9j9"/>
+                            <constraint firstItem="F1X-vP-7IH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xAF-k8-ntS"/>
+                            <constraint firstAttribute="bottom" secondItem="fyl-n4-LIU" secondAttribute="bottom" id="zcC-qq-FCz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="fDS-wK-oUu" id="QW6-gg-gVK"/>
+                        <outlet property="quantityOfProductLabel" destination="KAR-EL-spl" id="OlQ-5Y-ftm"/>
+                        <outlet property="tableView" destination="F1X-vP-7IH" id="GfF-ot-XAe"/>
+                        <outlet property="totalPriceLabel" destination="AyP-jU-p7F" id="BGh-ZI-p45"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="black100">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue4789FA">
+            <color red="0.27799999713897705" green="0.53700000047683716" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayA2A2A3">
+            <color red="0.63499999046325684" green="0.63499999046325684" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white100">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lexend-Bold.ttf">
+            <string>Lexend-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Manager View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ManagerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ManagerViewController" customModule="SafeFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MO-5U-uuz">
+                                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqI-wg-StD" userLabel="line view">
+                                        <rect key="frame" x="0.0" y="43.5" width="414" height="0.5"/>
+                                        <color key="backgroundColor" name="grayA2A2A3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="MX9-w3-SsP"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijg-my-jcK">
+                                        <rect key="frame" x="16" y="9.5" width="128.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="Lexend-Bold" family="Lexend" pointSize="20"/>
+                                        <color key="textColor" name="black100"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dqI-wg-StD" firstAttribute="leading" secondItem="6MO-5U-uuz" secondAttribute="leading" id="59V-xg-RfR"/>
+                                    <constraint firstItem="Ijg-my-jcK" firstAttribute="centerY" secondItem="6MO-5U-uuz" secondAttribute="centerY" id="G3I-xp-go4"/>
+                                    <constraint firstAttribute="height" constant="44" id="GJO-Mj-bul"/>
+                                    <constraint firstAttribute="trailing" secondItem="dqI-wg-StD" secondAttribute="trailing" id="HRb-cb-V7Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="dqI-wg-StD" secondAttribute="bottom" id="Wli-ke-dJf"/>
+                                    <constraint firstItem="Ijg-my-jcK" firstAttribute="leading" secondItem="6MO-5U-uuz" secondAttribute="leading" constant="16" id="xRp-Mv-hip"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cq5-Jq-34K" userLabel="Page View">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mKj-hI-qlH" customClass="BaseCollectionView" customModule="SafeFood" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="dFh-vy-rEY"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gJf-78-X5J">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-Nf-sdd" userLabel="Container View">
+                                        <rect key="frame" x="0.0" y="64" width="414" height="706"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="eb9-Nf-sdd" firstAttribute="leading" secondItem="cq5-Jq-34K" secondAttribute="leading" id="ILm-or-lA4"/>
+                                    <constraint firstItem="mKj-hI-qlH" firstAttribute="leading" secondItem="cq5-Jq-34K" secondAttribute="leading" id="Pei-et-eF2"/>
+                                    <constraint firstAttribute="bottom" secondItem="eb9-Nf-sdd" secondAttribute="bottom" id="V6M-vg-Efb"/>
+                                    <constraint firstAttribute="trailing" secondItem="eb9-Nf-sdd" secondAttribute="trailing" id="d6o-DB-FaQ"/>
+                                    <constraint firstItem="mKj-hI-qlH" firstAttribute="top" secondItem="cq5-Jq-34K" secondAttribute="top" id="gSO-6U-jSu"/>
+                                    <constraint firstAttribute="trailing" secondItem="mKj-hI-qlH" secondAttribute="trailing" id="gaL-0N-3q8"/>
+                                    <constraint firstItem="eb9-Nf-sdd" firstAttribute="top" secondItem="mKj-hI-qlH" secondAttribute="bottom" id="suw-Lo-fSJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="white100"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6MO-5U-uuz" secondAttribute="trailing" id="5tT-yz-Olo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cq5-Jq-34K" secondAttribute="trailing" id="Eao-Lb-LNn"/>
+                            <constraint firstItem="6MO-5U-uuz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Tjd-ft-1Sq"/>
+                            <constraint firstItem="6MO-5U-uuz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tzs-x2-Ohs"/>
+                            <constraint firstItem="cq5-Jq-34K" firstAttribute="top" secondItem="6MO-5U-uuz" secondAttribute="bottom" id="Xzp-KX-HBc"/>
+                            <constraint firstItem="cq5-Jq-34K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gRY-9c-FA6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cq5-Jq-34K" secondAttribute="bottom" id="zUc-AC-0kU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="mKj-hI-qlH" id="Bge-J1-Jke"/>
+                        <outlet property="containerView" destination="eb9-Nf-sdd" id="s5P-vM-JrT"/>
+                        <outlet property="titleScreenLabel" destination="Ijg-my-jcK" id="ynD-xF-n4R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="black100">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayA2A2A3">
+            <color red="0.63499999046325684" green="0.63499999046325684" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white100">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
