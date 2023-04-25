@@ -52,7 +52,7 @@ final class BillService: BillServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]["billId"]
+                    let dataJson = JSON(data)
                     let billId = dataJson.intValue
                     completion(.success(billId))
                 } catch {

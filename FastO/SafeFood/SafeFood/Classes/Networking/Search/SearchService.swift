@@ -39,7 +39,7 @@ final class SearchService: SearchServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]["result"]
+                    let dataJson = JSON(data)["content"]
                     let vouchers =  dataJson.arrayValue.map { BrandModel(json: $0) }
                     completion(.success(vouchers))
                 } catch {

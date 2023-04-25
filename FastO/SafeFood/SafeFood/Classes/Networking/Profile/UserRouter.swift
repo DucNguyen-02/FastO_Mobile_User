@@ -13,13 +13,13 @@ extension UserRouter: TargetType {
     var path: String {
         switch self {
         case .getUserProfile:
-            return "user/profile"
+            return "user/management/information"
         case .postProfile:
-            return "user/profile"
+            return "user/management/information"
         case .changePassword:
-            return "user/authentication/change-password"
+            return "user/authenticate/change-password"
         case .changeAvatar:
-            return "user/authentication/update-avatar"
+            return "user/management/information/update-avatar"
         }
     }
     

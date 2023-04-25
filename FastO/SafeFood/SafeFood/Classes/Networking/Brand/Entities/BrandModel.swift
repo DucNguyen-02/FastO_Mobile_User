@@ -18,9 +18,10 @@ enum StatusBrand: String {
 struct BrandModel {
     let id: Int
     let name: String
-    let status: StatusBrand
+//    let status: StatusBrand
+    let distance: Double
     let description: String
-    let phone: String
+    let street: String
     let logo: String
     let ratings: Int
     let ratingNumber: Double
@@ -31,22 +32,22 @@ struct BrandModel {
         id = json["id"].intValue
         name = json["name"].stringValue
         description = json["description"].stringValue
-        phone = json["phone"].stringValue
+        street = json["street"].stringValue
         logo = json["logo"].stringValue
         ratingNumber = json["startRatings"].doubleValue
         ratings = json["ratings"].intValue
+        distance = json["distance"].doubleValue
+//        let status = json["status"].stringValue
 
-        let status = json["status"].stringValue
-
-        if status == StatusBrand.active.rawValue {
-            self.status = .active
-        } else if status == StatusBrand.inactive.rawValue {
-            self.status = .inactive
-        } else if status == StatusBrand.deleted.rawValue {
-            self.status = .deleted
-        } else {
-            self.status = .blocked
-        }
+//        if status == StatusBrand.active.rawValue {
+//            self.status = .active
+//        } else if status == StatusBrand.inactive.rawValue {
+//            self.status = .inactive
+//        } else if status == StatusBrand.deleted.rawValue {
+//            self.status = .deleted
+//        } else {
+//            self.status = .blocked
+//        }
         x = json["x"].doubleValue
         y = json["y"].doubleValue
     }

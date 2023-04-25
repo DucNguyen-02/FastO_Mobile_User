@@ -3,16 +3,13 @@ import UIKit
 enum HomeTopChartsType: Int, CaseIterable {
     case voucher = 0
     case brand
-    case community
-    
+
     var title: String {
         switch self {
         case .voucher:
             return "Voucher"
         case .brand:
             return "Brand"
-        case .community:
-            return "Community"
         }
     }
 }

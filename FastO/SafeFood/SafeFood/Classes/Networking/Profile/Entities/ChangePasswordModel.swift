@@ -14,7 +14,7 @@ struct ChangePasswordModel {
 
     func toDictionary() -> [String: Any] {
         var dict = [String: Any]()
-        dict["oldPassword"] = old
+        dict["currentPassword"] = old
         dict["newPassword"] = new
         dict["confirmNewPassword"] = reNew
 

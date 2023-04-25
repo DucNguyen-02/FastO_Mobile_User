@@ -17,7 +17,6 @@ final class HomePresenter: HomeViewOutput {
     var topVouchers: [VoucherModel] = []
     var hotVouchers: [VoucherModel] = []
     var topCommunity: [HomeCommunityModel] = []
-    var news: [HomeNewsModel] = []
     var defaults = UserDefaults.standard
     var listRecentKeyword: [String] = []
 
@@ -30,8 +29,6 @@ final class HomePresenter: HomeViewOutput {
         getHotVouchers()
         getTopVouchers()
         getTopBrands()
-        getTopCommunity()
-        getNews()
         group.notify(queue: .main) { [weak self] in
             self?.view?.reloadTableViewData()
         }
@@ -73,7 +70,7 @@ private extension HomePresenter {
     
     func getBanner() {
         group.enter()
-        VoucherService.shared.getTopVoucherAdmin { [weak self] result in
+        VoucherService.shared.getAllVoucher(type: .shop) { [weak self] result in
             defer { self?.group.leave() }
             guard let self = self else { return }
             switch result {
@@ -88,7 +85,7 @@ private extension HomePresenter {
 
     func getHotVouchers() {
         group.enter()
-        VoucherService.shared.getAllVoucher(type: .admin) { [weak self] result in
+        VoucherService.shared.getAllVoucher(type: .shop) { [weak self] result in
             defer { self?.group.leave() }
             guard let self = self else { return }
             switch result {
@@ -117,7 +114,7 @@ private extension HomePresenter {
     }
 
     func getTopVouchers() {
-        VoucherService.shared.getTopVoucherShop { [weak self] result in
+        VoucherService.shared.getAllVoucher(type: .shop) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case let .success(topVouchers):
@@ -141,21 +138,6 @@ private extension HomePresenter {
             case let .failure(error):
                 SVProgressHUD.showError(withStatus: error.localizedDescription)
                 SVProgressHUD.dismiss(withDelay: 1.5)
-            }
-        }
-    }
-    
-    func getNews() {
-        group.enter()
-        NewsService.shared.getHomeNews { [weak self] result in
-            defer { self?.group.leave() }
-            guard let self = self else { return }
-            switch result {
-            case let .success(news):
-                self.news = news
-                
-            case let .failure(error):
-                ToastHelper.showError(error.message)
             }
         }
     }

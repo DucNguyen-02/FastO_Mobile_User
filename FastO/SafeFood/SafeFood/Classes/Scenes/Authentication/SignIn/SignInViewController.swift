@@ -40,6 +40,8 @@ final class SignInViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        emailTextField.text = "kimhoang.dev@gmail.com"
+        passwordTextField.text = "Lkh$$2302"
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Lexend-Bold.ttf">
-            <string>Lexend-Bold</string>
-        </array>
         <array key="Lexend-Regular.ttf">
             <string>Lexend-Regular</string>
         </array>
@@ -30,10 +27,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xiK-xG-Gmi" userLabel="Nav View">
-                                <rect key="frame" x="0.0" y="58" width="414" height="54"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="54"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gSO-BU-LcG">
-                                        <rect key="frame" x="16" y="9" width="228.5" height="36"/>
+                                        <rect key="frame" x="16" y="9" width="219.5" height="36"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo 1024" translatesAutoresizingMaskIntoConstraints="NO" id="eho-V8-8ja">
                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
@@ -43,7 +40,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAFEFOOD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrO-CF-cfn">
-                                                <rect key="frame" x="40" y="0.0" width="188.5" height="36"/>
+                                                <rect key="frame" x="40" y="0.0" width="179.5" height="36"/>
                                                 <fontDescription key="fontDescription" name="Lexend-SemiBold" family="Lexend" pointSize="34"/>
                                                 <color key="textColor" name="redFF2929"/>
                                                 <nil key="highlightedColor"/>
@@ -83,10 +80,10 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUg-Hf-voJ">
-                                <rect key="frame" x="0.0" y="112" width="414" height="784"/>
+                                <rect key="frame" x="0.0" y="108" width="414" height="788"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="akb-6j-83S">
-                                        <rect key="frame" x="0.0" y="24" width="414" height="1870"/>
+                                        <rect key="frame" x="0.0" y="24" width="414" height="1478"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0F-4H-j5E">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -150,7 +147,7 @@
                                                                         <rect key="frame" x="312" y="0.0" width="70" height="26"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="el5-IC-9eC">
-                                                                                <rect key="frame" x="-7" y="5.5" width="53" height="15"/>
+                                                                                <rect key="frame" x="-6" y="6" width="52" height="14"/>
                                                                                 <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="12"/>
                                                                                 <color key="textColor" name="black100"/>
                                                                                 <nil key="highlightedColor"/>
@@ -238,7 +235,7 @@
                                                                         <rect key="frame" x="312" y="0.0" width="70" height="26"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7m-Ri-kYU">
-                                                                                <rect key="frame" x="-3" y="5.5" width="53" height="15"/>
+                                                                                <rect key="frame" x="-2" y="6" width="52" height="14"/>
                                                                                 <fontDescription key="fontDescription" name="Lexend-Regular" family="Lexend" pointSize="12"/>
                                                                                 <color key="textColor" name="black100"/>
                                                                                 <nil key="highlightedColor"/>
@@ -340,54 +337,8 @@
                                                     </view>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qB5-fW-f42">
-                                                <rect key="frame" x="0.0" y="1431" width="414" height="380"/>
-                                                <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWa-kW-mAn">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssf-A2-jJi">
-                                                                <rect key="frame" x="16" y="12" width="382" height="26"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUb-G0-nd7">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="26"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="EVe-Qc-JiH"/>
-                                                                        </constraints>
-                                                                        <fontDescription key="fontDescription" name="Lexend-Bold" family="Lexend" pointSize="16"/>
-                                                                        <color key="textColor" name="black100"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9V-Bi-qcH">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="26"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="24" id="e73-ho-ID8"/>
-                                                                        </constraints>
-                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                        <state key="normal" image="ic_arrow_right"/>
-                                                                    </button>
-                                                                </subviews>
-                                                            </stackView>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="ssf-A2-jJi" secondAttribute="trailing" constant="16" id="TM3-MM-Blx"/>
-                                                            <constraint firstAttribute="bottom" secondItem="ssf-A2-jJi" secondAttribute="bottom" constant="12" id="TRm-e7-OVb"/>
-                                                            <constraint firstItem="ssf-A2-jJi" firstAttribute="top" secondItem="jWa-kW-mAn" secondAttribute="top" constant="12" id="Vkl-nO-vWm"/>
-                                                            <constraint firstItem="ssf-A2-jJi" firstAttribute="leading" secondItem="jWa-kW-mAn" secondAttribute="leading" constant="16" id="fCF-lA-B6B"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4H-47-JmI" customClass="HomeNewsView" customModule="SafeFood" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="50" width="414" height="330"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="330" id="cFe-KJ-d6S"/>
-                                                        </constraints>
-                                                    </view>
-                                                </subviews>
-                                            </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSF-cO-OkS">
-                                                <rect key="frame" x="0.0" y="1823" width="414" height="47"/>
+                                                <rect key="frame" x="0.0" y="1431" width="414" height="47"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="47" id="Nyp-tm-lGP"/>
@@ -431,10 +382,6 @@
                         <outlet property="hotVoucherLabel" destination="M5Y-p0-KV1" id="25m-C2-me2"/>
                         <outlet property="hotVoucherSectionContainerView" destination="sKw-hj-3Nc" id="b2s-wr-5zF"/>
                         <outlet property="hotVoucherSectionView" destination="9Bx-d3-FzD" id="OMi-oJ-rra"/>
-                        <outlet property="newsHeightConstraint" destination="cFe-KJ-d6S" id="bJe-Ni-tfm"/>
-                        <outlet property="newsLabel" destination="uUb-G0-nd7" id="POA-nQ-TDW"/>
-                        <outlet property="newsSectionContainerView" destination="qB5-fW-f42" id="XGK-ki-hGU"/>
-                        <outlet property="newsSectionView" destination="f4H-47-JmI" id="1xD-Ay-1bn"/>
                         <outlet property="recentBrandHeightConstraint" destination="qmG-CU-ycG" id="gJW-dz-BVY"/>
                         <outlet property="recentBrandSectionContainerView" destination="qOv-Fw-3Ki" id="G6i-aC-cnk"/>
                         <outlet property="recentBrandSectionView" destination="tLi-mH-L9j" id="nl2-p2-8x6"/>

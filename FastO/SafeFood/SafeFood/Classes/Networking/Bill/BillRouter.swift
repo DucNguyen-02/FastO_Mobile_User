@@ -19,11 +19,11 @@ extension BillRouter: TargetType {
     var path: String {
         switch self {
         case .postBill:
-            return "user/bills/create"
+            return "user/management/bill/create"
         case .getListBill:
-            return "user/bills"
+            return "user/management/bill"
         case let .getDetailBill(id):
-            return "user/bills/\(id)"
+            return "user/management/bill/\(id)"
         }
     }
 

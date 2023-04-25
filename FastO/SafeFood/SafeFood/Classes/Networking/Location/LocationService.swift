@@ -20,7 +20,7 @@ final class LocationService: LocationServiceProtocol {
             case let .success(response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]["result"]
+                    let dataJson = JSON(data)
                     let listBrandLocation = dataJson.arrayValue.map { BrandModel(json: $0) }
                     completion(.success(listBrandLocation))
                 } catch {

@@ -25,33 +25,33 @@ extension BrandRouter: TargetType {
     var path: String {
         switch self {
         case .getListBrandFavourite:
-            return "user/fauvourite/shops"
+            return "user/management/shops"
         case let .putAddBrandFavourite(id):
-            return "user/fauvourite/shops/add/\(id)"
+            return "user/management/shops/\(id)"
         case let .putDeleteBrandFavourite(id):
-            return "user/fauvourite/shops/delete/\(id)"
+            return "user/management/shops/\(id)"
         case .getAllShop:
-            return "users/shops/shops"
+            return "user/management/shop/shops"
         case let .getDetailShop(id):
-            return "users/shops/detail/\(id)"
+            return "user/management/shop/detail/\(id)"
         case .postRecentBrand:
-            return "users/shops/create/recent-shop"
+            return "user/management/shop/create/recent-shop"
         case .getRecentBrand:
-            return "users/shops/recent-shops"
+            return "user/management/shop/recent-shops"
         case .getListNearBrand:
-            return "users/shops/distance-shop"
+            return "user/management/shop/distance-shop"
         case .getTopBrands:
-            return "users/shops/top"
+            return "user/management/shop/top-shops"
         }
     }
 
     var method: Method {
         switch self {
-        case .postRecentBrand:
+        case .postRecentBrand, .putAddBrandFavourite:
             return .post
         
-        case .putAddBrandFavourite, .putDeleteBrandFavourite:
-            return .put
+        case .putDeleteBrandFavourite:
+            return .delete
         default:
             return .get
         }
@@ -91,7 +91,7 @@ extension BrandRouter: TargetType {
     var headers: [String: String]? {
         switch self {
         default:
-            return APIHelper.defaultHelpers
+            return ["Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJraW1ob2FuZy5kZXZAZ21haWwuY29tIiwiYXV0aCI6IlVTRVIiLCJleHAiOjE2ODQ5OTk2MTZ9.xQwO71akdOGEhcdUhzdVbmDQ_JhZ8lpcCQoV1CMh14EdAxWlPW1W3zqjjB6vH5oEMsxSJ4iib2EP0lT5cO5OJw"]
         }
     }
 }

@@ -37,8 +37,8 @@ final class AuthenService: AuthenServiceProtocol {
                     let data = try response.mapJSON()
                     let dataJson = JSON(data)["data"]
                     let status = dataJson["status"].stringValue
-                    let refreshToken = dataJson["refreshToken"].stringValue
-                    let accessToken = dataJson["accessToken"].stringValue
+                    let refreshToken = dataJson["id_token"].stringValue
+                    let accessToken = dataJson["id_token"].stringValue
                     let userId = dataJson["userId"].intValue
                     self.defaultsStorage.status = status
                     self.defaultsStorage.refreshToken = refreshToken

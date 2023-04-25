@@ -18,7 +18,7 @@ final class SearchResultPresenter: SearchResultViewOutput {
 
 extension SearchResultPresenter {
     func onViewDidLoad(with keyword: String) {
-        getVoucherSearch(keyword)
+//        getVoucherSearch(keyword)
         getBrandSearch(keyword)
 
         group.notify(queue: .main) { [weak self] in
