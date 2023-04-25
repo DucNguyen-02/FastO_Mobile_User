@@ -31,7 +31,7 @@ final class ProductService: ProductServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)
                     let product = ProductModel(json: dataJson)
                     completion(.success(product))
                 } catch {
@@ -50,7 +50,7 @@ final class ProductService: ProductServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]["result"]
+                    let dataJson = JSON(data)["content"]
                     let product = dataJson.arrayValue.map { ProductModel(json: $0) }
                     completion(.success(product))
                 } catch {

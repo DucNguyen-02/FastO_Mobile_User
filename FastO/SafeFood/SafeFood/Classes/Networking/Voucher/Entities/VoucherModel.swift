@@ -20,8 +20,8 @@ enum StatusVoucher: String {
 }
 
 enum UserType: String {
-    case admin = "admin"
-    case shop = "shop"
+    case admin = "ADMIN"
+    case shop = "SHOP"
 }
 
 struct VoucherModel {

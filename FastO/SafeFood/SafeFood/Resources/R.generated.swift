@@ -90,20 +90,12 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 30 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 23 storyboards.
   struct storyboard {
     /// Storyboard `ChooseVoucherViewController`.
     static let chooseVoucherViewController = _R.storyboard.chooseVoucherViewController()
-    /// Storyboard `CommunityViewController`.
-    static let communityViewController = _R.storyboard.communityViewController()
-    /// Storyboard `CreateCommunityViewController`.
-    static let createCommunityViewController = _R.storyboard.createCommunityViewController()
     /// Storyboard `DetailBrandViewController`.
     static let detailBrandViewController = _R.storyboard.detailBrandViewController()
-    /// Storyboard `DetailCommunityViewController`.
-    static let detailCommunityViewController = _R.storyboard.detailCommunityViewController()
-    /// Storyboard `DetailNewsViewController`.
-    static let detailNewsViewController = _R.storyboard.detailNewsViewController()
     /// Storyboard `DetailVoucherViewController`.
     static let detailVoucherViewController = _R.storyboard.detailVoucherViewController()
     /// Storyboard `DigitVerifyCodeViewController`.
@@ -122,8 +114,6 @@ struct R: Rswift.Validatable {
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `ListBrandApplyVoucherViewController`.
     static let listBrandApplyVoucherViewController = _R.storyboard.listBrandApplyVoucherViewController()
-    /// Storyboard `ListCommunityViewController`.
-    static let listCommunityViewController = _R.storyboard.listCommunityViewController()
     /// Storyboard `ListHotVoucherViewController`.
     static let listHotVoucherViewController = _R.storyboard.listHotVoucherViewController()
     /// Storyboard `ListRecentBrandViewController`.
@@ -136,8 +126,6 @@ struct R: Rswift.Validatable {
     static let managerViewController = _R.storyboard.managerViewController()
     /// Storyboard `MenuBrandViewController`.
     static let menuBrandViewController = _R.storyboard.menuBrandViewController()
-    /// Storyboard `NewsViewController`.
-    static let newsViewController = _R.storyboard.newsViewController()
     /// Storyboard `RatingViewController`.
     static let ratingViewController = _R.storyboard.ratingViewController()
     /// Storyboard `ResetPasswordViewController`.
@@ -146,8 +134,6 @@ struct R: Rswift.Validatable {
     static let searchViewController = _R.storyboard.searchViewController()
     /// Storyboard `SettingViewController`.
     static let settingViewController = _R.storyboard.settingViewController()
-    /// Storyboard `ShopCommunityViewController`.
-    static let shopCommunityViewController = _R.storyboard.shopCommunityViewController()
     /// Storyboard `SignInViewController`.
     static let signInViewController = _R.storyboard.signInViewController()
     /// Storyboard `SignUpViewController`.
@@ -161,37 +147,9 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "CommunityViewController", bundle: ...)`
-    static func communityViewController(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.communityViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "CreateCommunityViewController", bundle: ...)`
-    static func createCommunityViewController(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.createCommunityViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "DetailBrandViewController", bundle: ...)`
     static func detailBrandViewController(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.detailBrandViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "DetailCommunityViewController", bundle: ...)`
-    static func detailCommunityViewController(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.detailCommunityViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "DetailNewsViewController", bundle: ...)`
-    static func detailNewsViewController(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.detailNewsViewController)
     }
     #endif
 
@@ -259,13 +217,6 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "ListCommunityViewController", bundle: ...)`
-    static func listCommunityViewController(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.listCommunityViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "ListHotVoucherViewController", bundle: ...)`
     static func listHotVoucherViewController(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.listHotVoucherViewController)
@@ -308,13 +259,6 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "NewsViewController", bundle: ...)`
-    static func newsViewController(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.newsViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "RatingViewController", bundle: ...)`
     static func ratingViewController(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.ratingViewController)
@@ -339,13 +283,6 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "SettingViewController", bundle: ...)`
     static func settingViewController(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.settingViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "ShopCommunityViewController", bundle: ...)`
-    static func shopCommunityViewController(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.shopCommunityViewController)
     }
     #endif
 
@@ -1979,20 +1916,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 69 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 57 nibs.
   struct nib {
     /// Nib `BrandInformationView`.
     static let brandInformationView = _R.nib._BrandInformationView()
     /// Nib `ChangePasswordViewController`.
     static let changePasswordViewController = _R.nib._ChangePasswordViewController()
-    /// Nib `CommentDetailCommunityCell`.
-    static let commentDetailCommunityCell = _R.nib._CommentDetailCommunityCell()
-    /// Nib `CommunityCell`.
-    static let communityCell = _R.nib._CommunityCell()
-    /// Nib `CommunityShopView`.
-    static let communityShopView = _R.nib._CommunityShopView()
-    /// Nib `ConfirmCommunityViewController`.
-    static let confirmCommunityViewController = _R.nib._ConfirmCommunityViewController()
     /// Nib `CustomerBillCell`.
     static let customerBillCell = _R.nib._CustomerBillCell()
     /// Nib `DatePickerViewController`.
@@ -2025,18 +1954,12 @@ struct R: Rswift.Validatable {
     static let detailBrandVoucherView = _R.nib._DetailBrandVoucherView()
     /// Nib `DetailProductViewController`.
     static let detailProductViewController = _R.nib._DetailProductViewController()
-    /// Nib `EditCommunityViewController`.
-    static let editCommunityViewController = _R.nib._EditCommunityViewController()
     /// Nib `HomeBannerView`.
     static let homeBannerView = _R.nib._HomeBannerView()
     /// Nib `HomeHotVoucherCell`.
     static let homeHotVoucherCell = _R.nib._HomeHotVoucherCell()
     /// Nib `HomeHotVoucherView`.
     static let homeHotVoucherView = _R.nib._HomeHotVoucherView()
-    /// Nib `HomeNewsCell`.
-    static let homeNewsCell = _R.nib._HomeNewsCell()
-    /// Nib `HomeNewsView`.
-    static let homeNewsView = _R.nib._HomeNewsView()
     /// Nib `HomeRecentBrandView`.
     static let homeRecentBrandView = _R.nib._HomeRecentBrandView()
     /// Nib `HomeRecentKeywordView`.
@@ -2047,24 +1970,14 @@ struct R: Rswift.Validatable {
     static let homeTopChartCommunityCell = _R.nib._HomeTopChartCommunityCell()
     /// Nib `HomeTopChartsView`.
     static let homeTopChartsView = _R.nib._HomeTopChartsView()
-    /// Nib `ImageCreateCommunityCell`.
-    static let imageCreateCommunityCell = _R.nib._ImageCreateCommunityCell()
     /// Nib `ListNotificationViewController`.
     static let listNotificationViewController = _R.nib._ListNotificationViewController()
     /// Nib `ListReviewViewController`.
     static let listReviewViewController = _R.nib._ListReviewViewController()
-    /// Nib `ListShopCell`.
-    static let listShopCell = _R.nib._ListShopCell()
-    /// Nib `NewCommunityCell`.
-    static let newCommunityCell = _R.nib._NewCommunityCell()
-    /// Nib `NewsCell`.
-    static let newsCell = _R.nib._NewsCell()
     /// Nib `NotificationCell`.
     static let notificationCell = _R.nib._NotificationCell()
     /// Nib `PaymentBillCell`.
     static let paymentBillCell = _R.nib._PaymentBillCell()
-    /// Nib `PostDetailCommunityCell`.
-    static let postDetailCommunityCell = _R.nib._PostDetailCommunityCell()
     /// Nib `ProductBillCell`.
     static let productBillCell = _R.nib._ProductBillCell()
     /// Nib `ProfileViewController`.
@@ -2133,38 +2046,6 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.changePasswordViewController) instead")
     static func changePasswordViewController(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.changePasswordViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "CommentDetailCommunityCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.commentDetailCommunityCell) instead")
-    static func commentDetailCommunityCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.commentDetailCommunityCell)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "CommunityCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.communityCell) instead")
-    static func communityCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.communityCell)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "CommunityShopView", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.communityShopView) instead")
-    static func communityShopView(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.communityShopView)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "ConfirmCommunityViewController", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.confirmCommunityViewController) instead")
-    static func confirmCommunityViewController(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.confirmCommunityViewController)
     }
     #endif
 
@@ -2297,14 +2178,6 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UINib(name: "EditCommunityViewController", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.editCommunityViewController) instead")
-    static func editCommunityViewController(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.editCommunityViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
     /// `UINib(name: "HomeBannerView", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.homeBannerView) instead")
     static func homeBannerView(_: Void = ()) -> UIKit.UINib {
@@ -2325,22 +2198,6 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.homeHotVoucherView) instead")
     static func homeHotVoucherView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.homeHotVoucherView)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "HomeNewsCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.homeNewsCell) instead")
-    static func homeNewsCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.homeNewsCell)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "HomeNewsView", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.homeNewsView) instead")
-    static func homeNewsView(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.homeNewsView)
     }
     #endif
 
@@ -2385,14 +2242,6 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UINib(name: "ImageCreateCommunityCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.imageCreateCommunityCell) instead")
-    static func imageCreateCommunityCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.imageCreateCommunityCell)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
     /// `UINib(name: "ListNotificationViewController", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.listNotificationViewController) instead")
     static func listNotificationViewController(_: Void = ()) -> UIKit.UINib {
@@ -2409,30 +2258,6 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UINib(name: "ListShopCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.listShopCell) instead")
-    static func listShopCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.listShopCell)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "NewCommunityCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.newCommunityCell) instead")
-    static func newCommunityCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.newCommunityCell)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "NewsCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.newsCell) instead")
-    static func newsCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.newsCell)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
     /// `UINib(name: "NotificationCell", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.notificationCell) instead")
     static func notificationCell(_: Void = ()) -> UIKit.UINib {
@@ -2445,14 +2270,6 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.paymentBillCell) instead")
     static func paymentBillCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.paymentBillCell)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "PostDetailCommunityCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.postDetailCommunityCell) instead")
-    static func postDetailCommunityCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.postDetailCommunityCell)
     }
     #endif
 
@@ -2680,22 +2497,6 @@ struct R: Rswift.Validatable {
       return R.nib.changePasswordViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
-    static func commentDetailCommunityCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CommentDetailCommunityCell? {
-      return R.nib.commentDetailCommunityCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CommentDetailCommunityCell
-    }
-
-    static func communityCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CommunityCell? {
-      return R.nib.communityCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CommunityCell
-    }
-
-    static func communityShopView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-      return R.nib.communityShopView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-    }
-
-    static func confirmCommunityViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-      return R.nib.confirmCommunityViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-    }
-
     static func customerBillCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CustomerBillCell? {
       return R.nib.customerBillCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CustomerBillCell
     }
@@ -2760,10 +2561,6 @@ struct R: Rswift.Validatable {
       return R.nib.detailProductViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
-    static func editCommunityViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-      return R.nib.editCommunityViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-    }
-
     static func homeBannerView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.homeBannerView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
@@ -2774,14 +2571,6 @@ struct R: Rswift.Validatable {
 
     static func homeHotVoucherView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.homeHotVoucherView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-    }
-
-    static func homeNewsCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> HomeNewsCell? {
-      return R.nib.homeNewsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? HomeNewsCell
-    }
-
-    static func homeNewsView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-      return R.nib.homeNewsView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func homeRecentBrandView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -2804,10 +2593,6 @@ struct R: Rswift.Validatable {
       return R.nib.homeTopChartsView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
-    static func imageCreateCommunityCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ImageCreateCommunityCell? {
-      return R.nib.imageCreateCommunityCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ImageCreateCommunityCell
-    }
-
     static func listNotificationViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.listNotificationViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
@@ -2816,28 +2601,12 @@ struct R: Rswift.Validatable {
       return R.nib.listReviewViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
-    static func listShopCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ListShopCell? {
-      return R.nib.listShopCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ListShopCell
-    }
-
-    static func newCommunityCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> NewCommunityCell? {
-      return R.nib.newCommunityCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? NewCommunityCell
-    }
-
-    static func newsCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> NewsCell? {
-      return R.nib.newsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? NewsCell
-    }
-
     static func notificationCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> NotificationCell? {
       return R.nib.notificationCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? NotificationCell
     }
 
     static func paymentBillCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PaymentBillCell? {
       return R.nib.paymentBillCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? PaymentBillCell
-    }
-
-    static func postDetailCommunityCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PostDetailCommunityCell? {
-      return R.nib.postDetailCommunityCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? PostDetailCommunityCell
     }
 
     static func productBillCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ProductBillCell? {
@@ -4588,8 +4357,6 @@ struct _R: Rswift.Validatable {
     static func validate() throws {
       try _BrandInformationView.validate()
       try _ChangePasswordViewController.validate()
-      try _CommentDetailCommunityCell.validate()
-      try _CommunityCell.validate()
       try _DatePickerViewController.validate()
       try _DetailBillViewController.validate()
       try _DetailBrandMenuCell.validate()
@@ -4597,13 +4364,9 @@ struct _R: Rswift.Validatable {
       try _DetailBrandSummaryInformationView.validate()
       try _DetailProductViewController.validate()
       try _HomeHotVoucherCell.validate()
-      try _HomeNewsCell.validate()
       try _HomeSearchView.validate()
-      try _ImageCreateCommunityCell.validate()
       try _ListNotificationViewController.validate()
-      try _NewsCell.validate()
       try _PaymentBillCell.validate()
-      try _PostDetailCommunityCell.validate()
       try _QRViewController.validate()
       try _RatingOrderCell.validate()
       try _RecentKeywordCell.validate()
@@ -4656,75 +4419,6 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in nib 'ChangePasswordViewController', but couldn't be loaded.") }
           if UIKit.UIColor(named: "whiteF5F5F5", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'whiteF5F5F5' is used in nib 'ChangePasswordViewController', but couldn't be loaded.") }
         }
-      }
-
-      fileprivate init() {}
-    }
-
-    struct _CommentDetailCommunityCell: Rswift.NibResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "CommentDetailCommunityCell"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CommentDetailCommunityCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CommentDetailCommunityCell
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "communit-like", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'communit-like' is used in nib 'CommentDetailCommunityCell', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "community-selected-like", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'community-selected-like' is used in nib 'CommentDetailCommunityCell', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "ic_showlist", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_showlist' is used in nib 'CommentDetailCommunityCell', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in nib 'CommentDetailCommunityCell', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "gray737374", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'gray737374' is used in nib 'CommentDetailCommunityCell', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "grayA2A2A3", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'grayA2A2A3' is used in nib 'CommentDetailCommunityCell', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "whiteF5F5F5", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'whiteF5F5F5' is used in nib 'CommentDetailCommunityCell', but couldn't be loaded.") }
-        }
-      }
-
-      fileprivate init() {}
-    }
-
-    struct _CommunityCell: Rswift.NibResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "CommunityCell"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CommunityCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CommunityCell
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "communit-like", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'communit-like' is used in nib 'CommunityCell', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "community-comment", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'community-comment' is used in nib 'CommunityCell', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "community-selected-like", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'community-selected-like' is used in nib 'CommunityCell', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "ic_showlist", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_showlist' is used in nib 'CommunityCell', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "GrayE8E8E8", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'GrayE8E8E8' is used in nib 'CommunityCell', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in nib 'CommunityCell', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "grayA2A2A3", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'grayA2A2A3' is used in nib 'CommunityCell', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "redFF2929", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'redFF2929' is used in nib 'CommunityCell', but couldn't be loaded.") }
-        }
-      }
-
-      fileprivate init() {}
-    }
-
-    struct _CommunityShopView: Rswift.NibResourceType {
-      let bundle = R.hostingBundle
-      let name = "CommunityShopView"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-      }
-
-      fileprivate init() {}
-    }
-
-    struct _ConfirmCommunityViewController: Rswift.NibResourceType {
-      let bundle = R.hostingBundle
-      let name = "ConfirmCommunityViewController"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
 
       fileprivate init() {}
@@ -4979,17 +4673,6 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _EditCommunityViewController: Rswift.NibResourceType {
-      let bundle = R.hostingBundle
-      let name = "EditCommunityViewController"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-      }
-
-      fileprivate init() {}
-    }
-
     struct _HomeBannerView: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "HomeBannerView"
@@ -5023,35 +4706,6 @@ struct _R: Rswift.Validatable {
     struct _HomeHotVoucherView: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "HomeHotVoucherView"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-      }
-
-      fileprivate init() {}
-    }
-
-    struct _HomeNewsCell: Rswift.NibResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "HomeNewsCell"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> HomeNewsCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? HomeNewsCell
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "home_news_gradient", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'home_news_gradient' is used in nib 'HomeNewsCell', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in nib 'HomeNewsCell', but couldn't be loaded.") }
-        }
-      }
-
-      fileprivate init() {}
-    }
-
-    struct _HomeNewsView: Rswift.NibResourceType {
-      let bundle = R.hostingBundle
-      let name = "HomeNewsView"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
@@ -5123,23 +4777,6 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _ImageCreateCommunityCell: Rswift.NibResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "ImageCreateCommunityCell"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ImageCreateCommunityCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ImageCreateCommunityCell
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "ic_delete", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_delete' is used in nib 'ImageCreateCommunityCell', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-        }
-      }
-
-      fileprivate init() {}
-    }
-
     struct _ListNotificationViewController: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "ListNotificationViewController"
@@ -5172,46 +4809,6 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _ListShopCell: Rswift.NibResourceType {
-      let bundle = R.hostingBundle
-      let name = "ListShopCell"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ListShopCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ListShopCell
-      }
-
-      fileprivate init() {}
-    }
-
-    struct _NewCommunityCell: Rswift.NibResourceType {
-      let bundle = R.hostingBundle
-      let name = "NewCommunityCell"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> NewCommunityCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? NewCommunityCell
-      }
-
-      fileprivate init() {}
-    }
-
-    struct _NewsCell: Rswift.NibResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "NewsCell"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> NewsCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? NewsCell
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "home_news_gradient", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'home_news_gradient' is used in nib 'NewsCell', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in nib 'NewsCell', but couldn't be loaded.") }
-        }
-      }
-
-      fileprivate init() {}
-    }
-
     struct _NotificationCell: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "NotificationCell"
@@ -5237,29 +4834,6 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in nib 'PaymentBillCell', but couldn't be loaded.") }
           if UIKit.UIColor(named: "grayD6D6D6", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'grayD6D6D6' is used in nib 'PaymentBillCell', but couldn't be loaded.") }
-        }
-      }
-
-      fileprivate init() {}
-    }
-
-    struct _PostDetailCommunityCell: Rswift.NibResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "PostDetailCommunityCell"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PostDetailCommunityCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? PostDetailCommunityCell
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "communit-like", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'communit-like' is used in nib 'PostDetailCommunityCell', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "community-comment", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'community-comment' is used in nib 'PostDetailCommunityCell', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "community-selected-like", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'community-selected-like' is used in nib 'PostDetailCommunityCell', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "ic_showlist", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_showlist' is used in nib 'PostDetailCommunityCell', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in nib 'PostDetailCommunityCell', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "gray737374", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'gray737374' is used in nib 'PostDetailCommunityCell', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "grayA2A2A3", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'grayA2A2A3' is used in nib 'PostDetailCommunityCell', but couldn't be loaded.") }
         }
       }
 
@@ -5673,19 +5247,7 @@ struct _R: Rswift.Validatable {
       try chooseVoucherViewController.validate()
       #endif
       #if os(iOS) || os(tvOS)
-      try communityViewController.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
-      try createCommunityViewController.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
       try detailBrandViewController.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
-      try detailCommunityViewController.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
-      try detailNewsViewController.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try detailVoucherViewController.validate()
@@ -5715,9 +5277,6 @@ struct _R: Rswift.Validatable {
       try listBrandApplyVoucherViewController.validate()
       #endif
       #if os(iOS) || os(tvOS)
-      try listCommunityViewController.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
       try listHotVoucherViewController.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -5736,9 +5295,6 @@ struct _R: Rswift.Validatable {
       try menuBrandViewController.validate()
       #endif
       #if os(iOS) || os(tvOS)
-      try newsViewController.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
       try ratingViewController.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -5749,9 +5305,6 @@ struct _R: Rswift.Validatable {
       #endif
       #if os(iOS) || os(tvOS)
       try settingViewController.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
-      try shopCommunityViewController.validate()
       #endif
       #if os(iOS) || os(tvOS)
       try signInViewController.validate()
@@ -5785,57 +5338,6 @@ struct _R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    struct communityViewController: Rswift.StoryboardResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let communityViewController = StoryboardViewControllerResource<CommunityViewController>(identifier: "CommunityViewController")
-      let name = "CommunityViewController"
-
-      func communityViewController(_: Void = ()) -> CommunityViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: communityViewController)
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "ic_noti", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_noti' is used in storyboard 'CommunityViewController', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in storyboard 'CommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "grayA2A2A3", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'grayA2A2A3' is used in storyboard 'CommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in storyboard 'CommunityViewController', but couldn't be loaded.") }
-        }
-        if _R.storyboard.communityViewController().communityViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'communityViewController' could not be loaded from storyboard 'CommunityViewController' as 'CommunityViewController'.") }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct createCommunityViewController: Rswift.StoryboardResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let createCommunityViewController = StoryboardViewControllerResource<CreateCommunityViewController>(identifier: "CreateCommunityViewController")
-      let name = "CreateCommunityViewController"
-
-      func createCommunityViewController(_: Void = ()) -> CreateCommunityViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: createCommunityViewController)
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "ic-back", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic-back' is used in storyboard 'CreateCommunityViewController', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in storyboard 'CreateCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "blue4789FA", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'blue4789FA' is used in storyboard 'CreateCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "gray737374", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'gray737374' is used in storyboard 'CreateCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "grayA2A2A3", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'grayA2A2A3' is used in storyboard 'CreateCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in storyboard 'CreateCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "whiteF5F5F5", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'whiteF5F5F5' is used in storyboard 'CreateCommunityViewController', but couldn't be loaded.") }
-        }
-        if _R.storyboard.createCommunityViewController().createCommunityViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'createCommunityViewController' could not be loaded from storyboard 'CreateCommunityViewController' as 'CreateCommunityViewController'.") }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
     struct detailBrandViewController: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let detailBrandViewController = StoryboardViewControllerResource<DetailBrandViewController>(identifier: "DetailBrandViewController")
@@ -5854,55 +5356,6 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in storyboard 'DetailBrandViewController', but couldn't be loaded.") }
         }
         if _R.storyboard.detailBrandViewController().detailBrandViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'detailBrandViewController' could not be loaded from storyboard 'DetailBrandViewController' as 'DetailBrandViewController'.") }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct detailCommunityViewController: Rswift.StoryboardResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let detailCommunityViewController = StoryboardViewControllerResource<DetailCommunityViewController>(identifier: "DetailCommunityViewController")
-      let name = "DetailCommunityViewController"
-
-      func detailCommunityViewController(_: Void = ()) -> DetailCommunityViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: detailCommunityViewController)
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "ic-back", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic-back' is used in storyboard 'DetailCommunityViewController', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in storyboard 'DetailCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "blue4285F4", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'blue4285F4' is used in storyboard 'DetailCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "gray454546", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'gray454546' is used in storyboard 'DetailCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "grayA2A2A3", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'grayA2A2A3' is used in storyboard 'DetailCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in storyboard 'DetailCommunityViewController', but couldn't be loaded.") }
-        }
-        if _R.storyboard.detailCommunityViewController().detailCommunityViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'detailCommunityViewController' could not be loaded from storyboard 'DetailCommunityViewController' as 'DetailCommunityViewController'.") }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct detailNewsViewController: Rswift.StoryboardResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let detailNewsViewController = StoryboardViewControllerResource<DetailNewsViewController>(identifier: "DetailNewsViewController")
-      let name = "DetailNewsViewController"
-
-      func detailNewsViewController(_: Void = ()) -> DetailNewsViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: detailNewsViewController)
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "ic-back", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic-back' is used in storyboard 'DetailNewsViewController', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in storyboard 'DetailNewsViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in storyboard 'DetailNewsViewController', but couldn't be loaded.") }
-        }
-        if _R.storyboard.detailNewsViewController().detailNewsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'detailNewsViewController' could not be loaded from storyboard 'DetailNewsViewController' as 'DetailNewsViewController'.") }
       }
 
       fileprivate init() {}
@@ -6115,28 +5568,6 @@ struct _R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    struct listCommunityViewController: Rswift.StoryboardResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let listCommunityViewController = StoryboardViewControllerResource<ListCommunityViewController>(identifier: "ListCommunityViewController")
-      let name = "ListCommunityViewController"
-
-      func listCommunityViewController(_: Void = ()) -> ListCommunityViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: listCommunityViewController)
-      }
-
-      static func validate() throws {
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "grayA2A2A3", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'grayA2A2A3' is used in storyboard 'ListCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in storyboard 'ListCommunityViewController', but couldn't be loaded.") }
-        }
-        if _R.storyboard.listCommunityViewController().listCommunityViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'listCommunityViewController' could not be loaded from storyboard 'ListCommunityViewController' as 'ListCommunityViewController'.") }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
     struct listHotVoucherViewController: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let listHotVoucherViewController = StoryboardViewControllerResource<ListHotVoucherViewController>(identifier: "ListHotVoucherViewController")
@@ -6270,27 +5701,6 @@ struct _R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    struct newsViewController: Rswift.StoryboardResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "NewsViewController"
-      let newsViewController = StoryboardViewControllerResource<NewsViewController>(identifier: "NewsViewController")
-
-      func newsViewController(_: Void = ()) -> NewsViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: newsViewController)
-      }
-
-      static func validate() throws {
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in storyboard 'NewsViewController', but couldn't be loaded.") }
-        }
-        if _R.storyboard.newsViewController().newsViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'newsViewController' could not be loaded from storyboard 'NewsViewController' as 'NewsViewController'.") }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
     struct ratingViewController: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "RatingViewController"
@@ -6394,30 +5804,6 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in storyboard 'SettingViewController', but couldn't be loaded.") }
         }
         if _R.storyboard.settingViewController().settingViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'settingViewController' could not be loaded from storyboard 'SettingViewController' as 'SettingViewController'.") }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct shopCommunityViewController: Rswift.StoryboardResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "ShopCommunityViewController"
-      let shopCommunityViewController = StoryboardViewControllerResource<ShopCommunityViewController>(identifier: "ShopCommunityViewController")
-
-      func shopCommunityViewController(_: Void = ()) -> ShopCommunityViewController? {
-        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: shopCommunityViewController)
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "ic-back", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic-back' is used in storyboard 'ShopCommunityViewController', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in storyboard 'ShopCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "grayA2A2A3", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'grayA2A2A3' is used in storyboard 'ShopCommunityViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in storyboard 'ShopCommunityViewController', but couldn't be loaded.") }
-        }
-        if _R.storyboard.shopCommunityViewController().shopCommunityViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'shopCommunityViewController' could not be loaded from storyboard 'ShopCommunityViewController' as 'ShopCommunityViewController'.") }
       }
 
       fileprivate init() {}

@@ -22,17 +22,17 @@ extension VoucherRouter: TargetType {
     var path: String {
         switch self {
         case .getAllVoucher:
-            return "user/vouchers"
+            return "user/management/vouchers"
         case let .getDetailVoucher(id):
-            return "user/vouchers/\(id)"
+            return "user/management/vouchers/\(id)"
         case let .getListVoucherShop(id):
             return "user/vouchers/shop/\(id)"
         case .getTopVoucherAdmin:
-            return "user/vouchers/voucher-admin"
+            return "user/management/vouchers"
         case .getTopVoucherShop:
-            return "user/vouchers/voucher-shop"
+            return "user/management/vouchers"
         case .postVoucherApply:
-            return "user/vouchers/bill"
+            return "user/management/vouchers/bill"
         }
     }
 
@@ -50,8 +50,7 @@ extension VoucherRouter: TargetType {
         switch self {
         case let .getAllVoucher(type):
             let params: [String: Any] = [
-                "limit": 999,
-                "userType": type.rawValue
+                "voucherProvider": type.rawValue
             ]
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
 
@@ -72,7 +71,7 @@ extension VoucherRouter: TargetType {
     var headers: [String: String]? {
         switch self {
         default:
-            return APIHelper.defaultHelpers
+            return ["Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJraW1ob2FuZy5kZXZAZ21haWwuY29tIiwiYXV0aCI6IlVTRVIiLCJleHAiOjE2ODQ5OTk2MTZ9.xQwO71akdOGEhcdUhzdVbmDQ_JhZ8lpcCQoV1CMh14EdAxWlPW1W3zqjjB6vH5oEMsxSJ4iib2EP0lT5cO5OJw"]
         }
     }
 }

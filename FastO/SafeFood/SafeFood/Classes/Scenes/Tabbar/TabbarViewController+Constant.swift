@@ -3,7 +3,7 @@ import UIKit
 enum TabBarType: Int, CaseIterable {
     case home = 0
     case manager
-    case community
+//    case community
     case location
     case notification
     
@@ -13,8 +13,8 @@ enum TabBarType: Int, CaseIterable {
             return "Home"
         case .manager:
             return "Manager"
-        case .community:
-            return "Community"
+//        case .community:
+//            return "Community"
         case .location:
             return "Location"
         case .notification:
@@ -30,8 +30,8 @@ enum TabBarType: Int, CaseIterable {
         case .manager:
             return R.image.tabbar_voucher()
             
-        case .community:
-            return R.image.tabbar_community()
+//        case .community:
+//            return R.image.tabbar_community()
             
         case .location:
             return R.image.tabbar_location()
@@ -49,8 +49,8 @@ enum TabBarType: Int, CaseIterable {
         case .manager:
             return R.image.tabbar_voucher()
 
-        case .community:
-            return R.image.tabbar_community()
+//        case .community:
+//            return R.image.tabbar_community()
 
         case .location:
             return R.image.tabbar_location()

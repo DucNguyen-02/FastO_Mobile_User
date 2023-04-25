@@ -28,7 +28,7 @@ final class PaymentService: PaymentServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJSON = JSON(data)["data"]
+                    let dataJSON = JSON(data)
                     let url = dataJSON["url"].stringValue
                     completion(.success(url))
                 } catch {
@@ -51,7 +51,7 @@ final class PaymentService: PaymentServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)
                     let paymentReturn = VNPaymentReturnModel(json: dataJson)
                     completion(.success(paymentReturn))
                 } catch {

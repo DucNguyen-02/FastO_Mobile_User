@@ -19,9 +19,9 @@ extension ProductRouter: TargetType {
     var path: String {
         switch self {
         case let .getDetailProduct(id):
-            return "user/products/shop/detail/\(id)"
+            return "user/management/product/shop/detail/\(id)"
         case let .getProductMenu(id):
-            return "user/products/\(id)"
+            return "user/management/product/\(id)"
         }
     }
 

@@ -10,7 +10,7 @@ extension LocationRouter: TargetType {
     var path: String {
         switch self {
         case .getListBrandLocation:
-            return "users/shops/distance"
+            return "user/management/shop/distance"
         }
     }
     
@@ -27,7 +27,7 @@ extension LocationRouter: TargetType {
             let params: [String: Any] = [
                 "x": latitude,
                 "y": longitude,
-                "radius": 100
+                "radius": 10000
             ]
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
         }

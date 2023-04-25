@@ -11,9 +11,9 @@ extension RatingRouter: TargetType {
     var path: String {
         switch self {
         case .postRating:
-            return "shops/ratings"
+            return "user/management/rating"
         case let .getRating(id):
-            return "shops/ratings/\(id)"
+            return "user/management/rating/\(id)"
         }
     }
     

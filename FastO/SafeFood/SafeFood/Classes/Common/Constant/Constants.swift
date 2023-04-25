@@ -19,7 +19,7 @@ struct LangConstants {
 }
 
 struct APIConstant {
-    static let baseURL = "http://103.166.185.208:8080/api/"
+    static let baseURL = "https://api.safefood.fun/api/"
     static let tokenType = "Bearer"
     static let vnpayRedirectUrl = "safefood://"
     static let vnPayBankCode = "NCB"

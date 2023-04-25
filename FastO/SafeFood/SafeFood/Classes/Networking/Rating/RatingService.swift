@@ -33,7 +33,7 @@ final class RatingService: RatingServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJSON = JSON(data)["data"]
+                    let dataJSON = JSON(data)["content"]
                     let rating = dataJSON.arrayValue.map { ReviewModel(json: $0) }
                     completion(.success(rating))
                 } catch {
