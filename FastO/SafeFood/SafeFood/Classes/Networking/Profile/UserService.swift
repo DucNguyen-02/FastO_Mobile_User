@@ -28,7 +28,7 @@ final class UserService: UserServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)
                     let userProfile = AccountProfileModel(json: dataJson)
                     self.defaultsStorage.user = userProfile
                     completion(.success(userProfile))
@@ -48,7 +48,7 @@ final class UserService: UserServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)
                     let userProfile = AccountProfileModel(json: dataJson)
                     completion(.success(userProfile))
                 } catch {

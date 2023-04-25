@@ -39,7 +39,7 @@ final class BrandService: BrandServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)["content"]
                     let brands = dataJson.arrayValue.map { BrandFavouriteModel(json: $0) }
                     completion(.success(brands))
                 } catch {
@@ -59,7 +59,7 @@ final class BrandService: BrandServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]["result"]
+                    let dataJson = JSON(data)["content"]
                     let brand = dataJson.arrayValue.map { BrandModel(json: $0) }
                     completion(.success(brand))
                 } catch {
@@ -78,7 +78,7 @@ final class BrandService: BrandServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)
                     let brand = DetailBrandModel(json: dataJson)
                     completion(.success(brand))
                 } catch {
@@ -109,7 +109,7 @@ final class BrandService: BrandServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)["content"]
                     let brand = dataJson.arrayValue.map { BrandModel(json: $0) }
                     completion(.success(brand))
                 } catch {
@@ -128,7 +128,7 @@ final class BrandService: BrandServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]["result"]
+                    let dataJson = JSON(data)["content"]
                     let brand = dataJson.arrayValue.map { NearBrandModel(json: $0) }
                     completion(.success(brand))
                 } catch {
@@ -147,7 +147,7 @@ final class BrandService: BrandServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)["content"]
                     let brand = dataJson.arrayValue.map { TopBrandModel(json: $0) }
                     completion(.success(brand))
                 } catch {

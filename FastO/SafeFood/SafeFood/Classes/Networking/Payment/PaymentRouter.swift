@@ -12,10 +12,10 @@ extension PaymentRouter: TargetType {
     var path: String {
         switch self {
         case .vnPayMethod:
-            return "user/payment/vnpay/payment-url"
+            return "user/management/vn-pay/vnpay/payment-url"
             
         case .getVNPayResult:
-            return "user/payment/vnpay/return-url"
+            return "user/management/vn-pay/vnpay/return-url"
         }
     }
 

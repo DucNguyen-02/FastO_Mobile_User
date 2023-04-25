@@ -89,6 +89,7 @@ private extension SettingPresenter {
                 
             case let .failure(error):
                 ToastHelper.showError(error.message)
+                self.notificationCenter.post(name: AccountNotifications.accountLoggedOut, object: nil)
             }
         }
     }

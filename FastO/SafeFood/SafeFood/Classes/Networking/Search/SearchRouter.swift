@@ -13,7 +13,7 @@ extension SearchRouter: TargetType {
         case .searchVoucher:
             return "user/vouchers"
         case .searchBrand:
-            return "users/shops/shops"
+            return "user/management/shop/shops"
         }
     }
 
@@ -31,7 +31,7 @@ extension SearchRouter: TargetType {
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
             
         case let .searchBrand(keyword):
-            let params: [String: Any] = ["limit": 999, "query": keyword, "status": "ACTIVED"]
+            let params: [String: Any] = ["limit": 999, "query": keyword]
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
         }
     }

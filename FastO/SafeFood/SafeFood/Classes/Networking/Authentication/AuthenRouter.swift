@@ -19,23 +19,23 @@ extension AuthenRouter: TargetType {
     var path: String {
         switch self {
         case .login:
-            return "user/authentication/login"
+            return "user/authenticate"
         case .signUp:
-            return "user/authentication/sign-up"
+            return "user/authenticate/register"
         case .loginByGoogle:
-            return "user/authentication/login-app/google"
+            return "user/authenticate/google"
         case .loginByFaceBook:
-            return "user/authentication/login-app/facebook"
+            return "user/authenticate/facebook"
         case .digitCodeActive:
-            return "user/authentication/sign-up/active"
+            return "user/authenticate/activate-code"
         case .resendDigitCodeActive:
-            return "user/authentication/sign-up/re-send-code"
+            return "user/authenticate/re-send-code"
         case .forgotPassword:
-            return "user/authentication/forgot-password"
+            return "user/authenticate/forgot-password"
         case .digitCodeForgotPassword:
-            return "user/authentication/forgot-password/verify-code"
+            return "user/authenticate/forgot-password/verify-code"
         case .resetPassword:
-            return "user/authentication/forgot-password/reset"
+            return "user/authenticate/forgot-password/reset"
         case .logout:
             return "user/authentication/logout"
         }

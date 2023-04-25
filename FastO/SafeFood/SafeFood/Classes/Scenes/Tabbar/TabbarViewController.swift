@@ -76,10 +76,10 @@ extension TabBarViewController {
                 viewController.tabBarItem = item
                 return viewController
                 
-            case .community:
-                let viewController = CommunityViewController.makeMe()
-                viewController.tabBarItem = item
-                return viewController
+//            case .community:
+//                let viewController = CommunityViewController.makeMe()
+//                viewController.tabBarItem = item
+//                return viewController
                 
             case .location:
                 let viewController = LocationViewController.makeMe()

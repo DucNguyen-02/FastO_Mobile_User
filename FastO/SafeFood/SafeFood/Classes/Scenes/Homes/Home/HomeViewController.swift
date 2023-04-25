@@ -24,8 +24,7 @@ final class HomeViewController: BaseViewController {
     @IBOutlet private weak var topChartsSectionContainerView: UIStackView!
     @IBOutlet private weak var topChartsSectionView: HomeTopChartsView!
     @IBOutlet private weak var newsSectionContainerView: UIStackView!
-    @IBOutlet private weak var newsSectionView: HomeNewsView!
-    
+
     @IBOutlet private weak var wellcomeLabel: UILabel!
     @IBOutlet private weak var recentlyLabel: UILabel!
     @IBOutlet private weak var hotVoucherLabel: UILabel!
@@ -95,7 +94,6 @@ private extension HomeViewController {
         bannerHeightConstraint.constant = HomeBannerView.Constants.itemSize.height
         hotVoucherHeightConstraint.constant = HomeHotVoucherView.Constants.itemSize.height
         topChartsHeightConstraint.constant = HomeTopChartsView.Constants.sectionHeight
-        newsHeightConstraint.constant = HomeNewsView.Constants.sectionHeight
     }
 
     func setupUserDefaults() {
@@ -120,18 +118,6 @@ extension HomeViewController: HomeRecentKeywordDelegate {
     }
 }
 
-// MARK: - HomeNewsDelegate
-
-extension HomeViewController: HomeNewsDelegate {
-    func detailNews(id: Int) {
-        if let topVC = UIViewController.topViewController() {
-            let vc = DetailNewsViewController.makeMe()
-            vc.setupData(id: id)
-            topVC.pushViewController(vc, animated: true)
-        }
-    }
-}
-
 // MARK: - HomeViewInput
 
 extension HomeViewController: HomeViewInput {
@@ -149,9 +135,6 @@ extension HomeViewController: HomeViewInput {
         topChartsSectionView.topCommunity = presenter.topCommunity
         topChartsSectionView.topBrands = presenter.topBrands
         topChartsSectionView.topVouchers = presenter.topVouchers
-        
-        newsSectionContainerView.isHidden = presenter.news.isEmpty
-        newsSectionView.listNews = presenter.news
 
         homeSearchView.homeRecentKeywordDelegate = self
         homeRecentSearchView.isHidden = presenter.listRecentKeyword.isEmpty
@@ -160,7 +143,5 @@ extension HomeViewController: HomeViewInput {
             homeRecentSearchView.listKeyword = presenter.listRecentKeyword
         }
         homeRecentSearchView.homeRecentKeywordDelegate = self
-
-        newsSectionView.homeNewsDelegate = self
     }
 }

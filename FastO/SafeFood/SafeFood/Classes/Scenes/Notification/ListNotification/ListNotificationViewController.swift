@@ -92,13 +92,6 @@ extension ListNotificationViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let notification = presenter.notifications[indexPath.row]
-        if let topVC = UIViewController.topViewController() {
-            let vc = DetailCommunityViewController.makeMe()
-            vc.setupData(id: notification.typeId)
-            topVC.pushViewController(vc, animated: true)
-        }
-        presenter.onSeenNotification(seen: notification.notificationId)
     }
 }
 

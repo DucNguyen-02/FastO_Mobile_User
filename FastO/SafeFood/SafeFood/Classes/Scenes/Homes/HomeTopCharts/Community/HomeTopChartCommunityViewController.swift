@@ -63,10 +63,5 @@ extension HomeTopChartCommunityViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let topVC = UIViewController.topViewController() {
-            let vc = DetailCommunityViewController.makeMe()
-            vc.setupData(id: topCommunity[indexPath.row].reviewId)
-            topVC.pushViewController(vc, animated: true)
-        }
     }
 }

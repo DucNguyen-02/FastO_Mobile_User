@@ -19,11 +19,11 @@ struct TopBrandModel {
     let ratingNumber: Double
 
     init(json: JSON) {
-        id = json["shopId"].intValue
+        id = json["id"].intValue
         name = json["shopName"].stringValue
         description = json["description"].stringValue
         phone = json["phone"].stringValue
-        logo = json["logo"].stringValue
+        logo = json["banner"].stringValue
         ratingNumber = json["startRatings"].doubleValue
         ratings = json["ratings"].intValue
         let status = json["status"].stringValue

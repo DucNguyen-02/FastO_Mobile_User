@@ -34,7 +34,7 @@ struct ProfileBrandModel {
         ratingNumber = json["startRatings"].doubleValue
         ratings = json["rantings"].intValue
         isFavourite = json["isFauvorite"].boolValue
-        for image in json["imageShops"].arrayValue {
+        for image in json["banner"].arrayValue {
             self.images.append(image.stringValue)
         }
 

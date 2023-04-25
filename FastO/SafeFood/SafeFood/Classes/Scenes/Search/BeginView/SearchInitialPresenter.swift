@@ -47,7 +47,7 @@ extension SearchInitialPresenter {
     
     func getHotVouchers() {
         group.enter()
-        VoucherService.shared.getAllVoucher(type: .admin) { [weak self] result in
+        VoucherService.shared.getAllVoucher(type: .shop) { [weak self] result in
             defer { self?.group.leave() }
             guard let self = self else { return }
             switch result {
