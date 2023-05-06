@@ -1,10 +1,3 @@
-//
-//  MenuBrandViewProtocol.swift
-//  SafeFood
-//
-//  Created by Lê Kim Hoàng on 11/18/22.
-//  
-//
 
 import Foundation
 
@@ -14,6 +7,7 @@ protocol MenuBrandViewInput: AnyObject {
 
 protocol MenuBrandViewOutput: AnyObject {
     func onViewDidLoad(shopId: Int)
+    func onPostCart(_ params: [String: Any])
 }
 
 protocol MenuBrandDelegate: AnyObject {

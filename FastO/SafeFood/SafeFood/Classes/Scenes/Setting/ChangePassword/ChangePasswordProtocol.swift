@@ -1,10 +1,3 @@
-//
-//  ChangePasswordProtocol.swift
-//  SafeFood
-//
-//  Created by Lê Kim Hoàng on 11/7/22.
-//
-
 import Foundation
 
 protocol ChangePasswordViewInput: AnyObject {

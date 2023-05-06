@@ -22,7 +22,7 @@ final class UploadImageService: UploadImageServiceProtocol {
             case let .success(response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)
                     let images = dataJson.arrayValue.map { $0.stringValue }
                     completion(.success(images))
                     

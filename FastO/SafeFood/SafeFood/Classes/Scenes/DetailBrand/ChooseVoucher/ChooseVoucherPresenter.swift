@@ -1,11 +1,3 @@
-//
-//  ChooseVoucherPresenter.swift
-//  SafeFood
-//
-//  Created by ADMIN on 19/11/2022.
-//  
-//
-
 import Foundation
 
 final class ChooseVoucherPresenter {

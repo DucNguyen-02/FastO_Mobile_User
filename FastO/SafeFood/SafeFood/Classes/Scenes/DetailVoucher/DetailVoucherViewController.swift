@@ -1,11 +1,3 @@
-//
-//  DetailVoucherViewController.swift
-//  SafeFood
-//
-//  Created by Lê Kim Hoàng on 11/16/22.
-//  
-//
-
 import UIKit
 
 final class DetailVoucherViewController: BaseViewController {

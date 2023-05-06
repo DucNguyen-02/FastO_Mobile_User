@@ -1,10 +1,3 @@
-//
-//  ProfilePresenter.swift
-//  SafeFood
-//
-//  Created by ADMIN on 21/11/2022.
-//
-
 import UIKit
 
 final class ProfilePresenter {

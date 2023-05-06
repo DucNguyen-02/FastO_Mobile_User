@@ -28,20 +28,17 @@ struct ProfileBrandModel {
     init(json: JSON) {
         id = json["id"].intValue
         name = json["name"].stringValue
-        logo = json["logo"].stringValue
+        logo = json["banner"].stringValue
         description = json["description"].stringValue
         phone = json["phone"].stringValue
         ratingNumber = json["startRatings"].doubleValue
-        ratings = json["rantings"].intValue
+        ratings = json["ranting"].intValue
         isFavourite = json["isFauvorite"].boolValue
-        for image in json["banner"].arrayValue {
-            self.images.append(image.stringValue)
-        }
-
-        city = json["city"].stringValue
-        disctrict = json["disctrict"].stringValue
-        town = json["town"].stringValue
-        street = json["street"].stringValue
+        images.append(json["banner"].stringValue)
+        city = json["country"].stringValue
+        disctrict = json["city"].stringValue
+        town = json["streetAddress"].stringValue
+        street = json["stateProvince"].stringValue
         x = json["x"].doubleValue
         y = json["y"].doubleValue
     }

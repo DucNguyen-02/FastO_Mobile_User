@@ -128,7 +128,7 @@ final class BrandService: BrandServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["content"]
+                    let dataJson = JSON(data)
                     let brand = dataJson.arrayValue.map { NearBrandModel(json: $0) }
                     completion(.success(brand))
                 } catch {

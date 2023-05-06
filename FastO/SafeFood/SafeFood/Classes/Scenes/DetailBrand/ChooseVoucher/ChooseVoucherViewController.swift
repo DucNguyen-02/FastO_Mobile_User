@@ -1,11 +1,3 @@
-//
-//  ChooseVoucherViewController.swift
-//  SafeFood
-//
-//  Created by ADMIN on 19/11/2022.
-//  
-//
-
 import UIKit
 
 final class ChooseVoucherViewController: BaseViewController {

@@ -1,11 +1,3 @@
-//
-//  RatingViewController.swift
-//  AppPass
-//
-//  Created by Zipris on 25/11/2022.
-//  
-//
-
 import UIKit
 import HCSStarRatingView
 

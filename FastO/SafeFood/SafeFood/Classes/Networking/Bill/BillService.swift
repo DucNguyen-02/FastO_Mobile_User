@@ -14,6 +14,8 @@ protocol BillServiceProtocol {
     func getListBill(status: String , query: String?, completion: @escaping ServiceRequestCompletion<[ListBillModel]>)
     func postBill(_ params: [String: Any], completion: @escaping ServiceRequestCompletion<Int>)
     func getDetailBill(id: Int, completion: @escaping ServiceRequestCompletion<DetailBillModel>)
+    func postCart(_ params: [String: Any], completion: @escaping ServiceRequestCompletion<ServiceRequestSuccessModel>)
+
 
 }
 
@@ -33,7 +35,7 @@ final class BillService: BillServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)
                     let bill = dataJson.arrayValue.map { ListBillModel(json: $0) }
                     completion(.success(bill))
                 } catch {
@@ -52,13 +54,24 @@ final class BillService: BillServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)
+                    let dataJson = JSON(data)["billId"]
                     let billId = dataJson.intValue
                     completion(.success(billId))
                 } catch {
                     completion(.failure(.mappingError()))
                 }
                 
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+
+    func postCart(_ params: [String : Any], completion: @escaping ServiceRequestCompletion<ServiceRequestSuccessModel>) {
+        networkAdapter.request(target: BillRouter.postCart(params)) { result in
+            switch result {
+            case .success:
+                completion(.success(ServiceRequestSuccessModel()))
             case .failure(let error):
                 completion(.failure(error))
             }
@@ -71,7 +84,7 @@ final class BillService: BillServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)
                     let bill = DetailBillModel(json: dataJson)
                     completion(.success(bill))
                 } catch {

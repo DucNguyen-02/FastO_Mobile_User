@@ -10,7 +10,7 @@ extension UploadImageRouter: TargetType {
     var path: String {
         switch self {
         case .uploadImage:
-            return "users/image/upload"
+            return "user/management/images/upload"
         }
     }
     

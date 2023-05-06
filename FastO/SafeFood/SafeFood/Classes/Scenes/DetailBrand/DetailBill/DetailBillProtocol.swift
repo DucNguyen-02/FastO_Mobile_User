@@ -1,10 +1,3 @@
-//
-//  DetailBillProtocol.swift
-//  SafeFood
-//
-//  Created by Lê Kim Hoàng on 11/6/22.
-//
-
 import Foundation
 
 enum BillSection: Int, CaseIterable {

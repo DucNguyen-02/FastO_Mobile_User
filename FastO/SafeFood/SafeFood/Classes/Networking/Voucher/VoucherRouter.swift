@@ -71,7 +71,7 @@ extension VoucherRouter: TargetType {
     var headers: [String: String]? {
         switch self {
         default:
-            return ["Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJraW1ob2FuZy5kZXZAZ21haWwuY29tIiwiYXV0aCI6IlVTRVIiLCJleHAiOjE2ODQ5OTk2MTZ9.xQwO71akdOGEhcdUhzdVbmDQ_JhZ8lpcCQoV1CMh14EdAxWlPW1W3zqjjB6vH5oEMsxSJ4iib2EP0lT5cO5OJw"]
+            return APIHelper.defaultHelpers
         }
     }
 }
