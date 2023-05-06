@@ -1,11 +1,3 @@
-//
-//  RatingPresenter.swift
-//  AppPass
-//
-//  Created by Zipris on 25/11/2022.
-//  
-//
-
 import Foundation
 
 final class RatingPresenter {

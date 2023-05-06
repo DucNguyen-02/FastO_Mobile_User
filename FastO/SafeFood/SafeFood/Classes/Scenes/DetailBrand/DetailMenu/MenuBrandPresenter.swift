@@ -1,11 +1,3 @@
-//
-//  MenuBrandPresenter.swift
-//  SafeFood
-//
-//  Created by Lê Kim Hoàng on 11/18/22.
-//  
-//
-
 import Foundation
 
 final class MenuBrandPresenter {
@@ -23,6 +15,10 @@ extension MenuBrandPresenter: MenuBrandViewOutput {
     func onViewDidLoad(shopId: Int) {
         getMenuProduct(id: shopId)
     }
+
+    func onPostCart(_ params: [String: Any]) {
+        postCart(params: params)
+    }
 }
 
 // MARK: - Private
@@ -36,6 +32,17 @@ private extension MenuBrandPresenter {
                 self.products = products
                 self.view?.reloadTableViewData()
                 
+            case let .failure(error):
+                ToastHelper.showError(error.message)
+            }
+        }
+    }
+
+    func postCart(params: [String: Any]) {
+        BillService.shared.postCart(params) { result in
+            switch result {
+            case .success:
+                break
             case let .failure(error):
                 ToastHelper.showError(error.message)
             }

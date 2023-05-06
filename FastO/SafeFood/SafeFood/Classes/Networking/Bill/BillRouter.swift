@@ -11,6 +11,7 @@ enum BillRouter {
     case postBill(_ params: [String: Any])
     case getListBill(status: String, query: String?)
     case getDetailBill(id: Int)
+    case postCart(_ params: [String: Any])
 }
 
 extension BillRouter: TargetType {
@@ -24,12 +25,14 @@ extension BillRouter: TargetType {
             return "user/management/bill"
         case let .getDetailBill(id):
             return "user/management/bill/\(id)"
+        case .postCart:
+            return "user/management/carts"
         }
     }
 
     var method: Method {
         switch self {
-        case .postBill:
+        case .postBill, .postCart:
             return .post
             
         default:
@@ -49,7 +52,7 @@ extension BillRouter: TargetType {
             }
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
 
-        case let .postBill(params):
+        case let .postBill(params), let .postCart(params):
             return .requestParameters(parameters: params, encoding: JSONEncoding.default)
             
         default:

@@ -61,7 +61,7 @@ private extension SearchListBrandViewController {
     func setupDataBrand(for cell: SafeFoodBrandItem, brand: BrandModel) {
         cell.title = brand.name
         cell.subtitle = brand.description
-        cell.imageUrl = brand.logo
+        cell.imageUrl = brand.banner
         cell.countStar = brand.ratingNumber
         cell.quantityOfVoted = brand.ratings
         cell.ratingStar = CGFloat(brand.ratingNumber)

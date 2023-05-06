@@ -72,7 +72,7 @@ extension BrandRouter: TargetType {
         case let .getListNearBrand(id):
             let params: [String: Any] =
                 ["shopId": id,
-                 "radius": 1000,
+                 "radius": 10000,
                 "limit": 999]
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
 
@@ -91,7 +91,7 @@ extension BrandRouter: TargetType {
     var headers: [String: String]? {
         switch self {
         default:
-            return ["Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJraW1ob2FuZy5kZXZAZ21haWwuY29tIiwiYXV0aCI6IlVTRVIiLCJleHAiOjE2ODQ5OTk2MTZ9.xQwO71akdOGEhcdUhzdVbmDQ_JhZ8lpcCQoV1CMh14EdAxWlPW1W3zqjjB6vH5oEMsxSJ4iib2EP0lT5cO5OJw"]
+            return APIHelper.defaultHelpers
         }
     }
 }

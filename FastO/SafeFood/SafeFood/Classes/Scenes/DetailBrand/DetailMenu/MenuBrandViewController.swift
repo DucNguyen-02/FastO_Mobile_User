@@ -1,10 +1,3 @@
-//
-//  MenuBrandViewController.swift
-//  SafeFood
-//
-//  Created by Lê Kim Hoàng on 11/18/22.
-//  
-//
 
 import UIKit
 
@@ -25,6 +18,8 @@ final class MenuBrandViewController: BaseViewController {
     private var arrayQuantity = [Int: Int]()
     private var arrayPrice = [Int: Int]()
     private var orderDetails: [OrderDetail] = []
+    private var cartDetails: [ProductCartDetail] = []
+
     private lazy var presenter: MenuBrandPresenter = {
       let presenter = MenuBrandPresenter()
       presenter.view = self
@@ -42,6 +37,7 @@ final class MenuBrandViewController: BaseViewController {
     
     @IBAction private func continueButtonTapped(_ sender: Any) {
         if let topVC = UIViewController.topViewController() {
+            presenter.onPostCart(createCart())
             let vc = ChooseVoucherViewController.makeMe()
             vc.setupData(with: createParams())
             topVC.pushViewController(vc, animated: true)
@@ -96,6 +92,29 @@ private extension MenuBrandViewController {
         let model = VoucherApplyModel(orderDetails: orderDetails, shopId: shopId.orEmpty)
         
         return model
+    }
+
+    func createCart() -> [String: Any] {
+        cartDetails.removeAll()
+
+        var arrayProductId: [Int] = []
+        arrayProductId.append(contentsOf: arrayQuantity.keys)
+
+        var arrayAmount: [Int] = []
+        arrayAmount.append(contentsOf: arrayQuantity.values)
+
+
+        for i in 0...arrayQuantity.count - 1 {
+            arrayAmount[i] > 0 ? cartDetails.append(ProductCartDetail(amount: arrayAmount[i],
+                                                                      productId: arrayProductId[i],
+                                                                      image: "",
+                                                                      name:  "",
+                                                                      price: 0,
+                                                                      shopId: shopId.orEmpty)) : nil
+        }
+
+        let model = CreateCartModel(cartDtos: cartDetails, shopId: shopId.orEmpty)
+        return model.toDictionary()
     }
 }
 

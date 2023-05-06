@@ -10,6 +10,7 @@ final class SearchResultPresenter: SearchResultViewOutput {
     // MARK: - Public Variable
 
     var brands: [BrandModel] = []
+    var products: [ProductModel] = []
     var vouchers: [VoucherModel] = []
     weak var view: SearchResultViewInput?
 }
@@ -18,7 +19,7 @@ final class SearchResultPresenter: SearchResultViewOutput {
 
 extension SearchResultPresenter {
     func onViewDidLoad(with keyword: String) {
-//        getVoucherSearch(keyword)
+        getVoucherSearch(keyword)
         getBrandSearch(keyword)
 
         group.notify(queue: .main) { [weak self] in
