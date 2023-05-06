@@ -1,10 +1,3 @@
-//
-//  ChangePasswordViewController.swift
-//  SafeFood
-//
-//  Created by Lê Kim Hoàng on 11/7/22.
-//
-
 import UIKit
 
 final class ChangePasswordViewController: BaseViewController {

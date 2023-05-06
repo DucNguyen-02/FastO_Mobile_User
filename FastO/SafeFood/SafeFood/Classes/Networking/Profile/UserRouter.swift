@@ -42,7 +42,7 @@ extension UserRouter: TargetType {
             return .requestParameters(parameters: info, encoding: JSONEncoding.default)
 
         case let .changeAvatar(avatar):
-            let param: [String: Any] = ["avatar": avatar]
+            let param: [String: Any] = ["imageUser": avatar]
             return .requestParameters(parameters: param, encoding: JSONEncoding.default)
             
         default:

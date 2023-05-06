@@ -35,7 +35,7 @@ final class AuthenService: AuthenServiceProtocol {
             case .success(let response):
                 do {
                     let data = try response.mapJSON()
-                    let dataJson = JSON(data)["data"]
+                    let dataJson = JSON(data)
                     let status = dataJson["status"].stringValue
                     let refreshToken = dataJson["id_token"].stringValue
                     let accessToken = dataJson["id_token"].stringValue

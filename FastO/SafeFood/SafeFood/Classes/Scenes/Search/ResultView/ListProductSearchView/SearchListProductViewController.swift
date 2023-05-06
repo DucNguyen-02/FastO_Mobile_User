@@ -54,9 +54,7 @@ extension SearchListProductViewController: UITableViewDataSource {
 extension SearchListProductViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DetailProductViewController()
-//        vc.isFromRecommendationMenuView = true
-//        vc.brandId = listProduct[indexPath.row].brandId
-//        vc.productId = listProduct[indexPath.row].id
+        vc.setupData(quantity: 0, id: listProduct[indexPath.row].id, type: .menu, shopId: listProduct[indexPath.row].shopId)
         pushViewController(vc, animated: true)
     }
 

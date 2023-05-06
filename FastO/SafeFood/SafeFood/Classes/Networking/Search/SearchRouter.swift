@@ -11,7 +11,7 @@ extension SearchRouter: TargetType {
     var path: String {
         switch self {
         case .searchVoucher:
-            return "user/vouchers"
+            return "user/management/vouchers"
         case .searchBrand:
             return "user/management/shop/shops"
         }
@@ -27,11 +27,11 @@ extension SearchRouter: TargetType {
     var task: Task {
         switch self {
         case let .searchVoucher(keyword):
-            let params: [String: Any] = ["limit": 999, "query": keyword]
+            let params: [String: Any] = ["size": 999, "query": keyword, "voucherProvider": "SHOP"]
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
             
         case let .searchBrand(keyword):
-            let params: [String: Any] = ["limit": 999, "query": keyword]
+            let params: [String: Any] = ["size": 999, "query": keyword]
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
         }
     }

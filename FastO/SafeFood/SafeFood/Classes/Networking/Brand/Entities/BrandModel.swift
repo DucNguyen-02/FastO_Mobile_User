@@ -23,6 +23,7 @@ struct BrandModel {
     let description: String
     let street: String
     let logo: String
+    let banner: String
     let ratings: Int
     let ratingNumber: Double
     let x: Double
@@ -32,10 +33,11 @@ struct BrandModel {
         id = json["id"].intValue
         name = json["name"].stringValue
         description = json["description"].stringValue
-        street = json["street"].stringValue
+        street = json["streetAddress"].stringValue
         logo = json["logo"].stringValue
+        banner = json["banner"].stringValue
         ratingNumber = json["startRatings"].doubleValue
-        ratings = json["ratings"].intValue
+        ratings = json["rating"].intValue
         distance = json["distance"].doubleValue
 //        let status = json["status"].stringValue
 

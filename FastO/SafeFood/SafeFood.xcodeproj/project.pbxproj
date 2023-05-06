@@ -214,6 +214,7 @@
 		5285B64428DF452500279BF0 /* TermAndPolicyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285B64328DF452500279BF0 /* TermAndPolicyLabel.swift */; };
 		5285B64728DF48B000279BF0 /* SignUpLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285B64628DF48B000279BF0 /* SignUpLabel.swift */; };
 		5285B64D28DF56C000279BF0 /* SignUpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285B64C28DF56C000279BF0 /* SignUpProtocol.swift */; };
+		528696DF2A06AD7800115841 /* CreateCartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528696DE2A06AD7800115841 /* CreateCartModel.swift */; };
 		52958BE428E1DEBF00FE1F9D /* ForgotPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52958BE328E1DEBF00FE1F9D /* ForgotPasswordPresenter.swift */; };
 		52958BE828E1F36B00FE1F9D /* ResetPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52958BE728E1F36B00FE1F9D /* ResetPasswordPresenter.swift */; };
 		52958BEB28E1F48900FE1F9D /* ResetPasswordProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52958BEA28E1F48900FE1F9D /* ResetPasswordProtocol.swift */; };
@@ -589,6 +590,7 @@
 		5285B64328DF452500279BF0 /* TermAndPolicyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermAndPolicyLabel.swift; sourceTree = "<group>"; };
 		5285B64628DF48B000279BF0 /* SignUpLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLabel.swift; sourceTree = "<group>"; };
 		5285B64C28DF56C000279BF0 /* SignUpProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocol.swift; sourceTree = "<group>"; };
+		528696DE2A06AD7800115841 /* CreateCartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCartModel.swift; sourceTree = "<group>"; };
 		52958BE328E1DEBF00FE1F9D /* ForgotPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordPresenter.swift; sourceTree = "<group>"; };
 		52958BE728E1F36B00FE1F9D /* ResetPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordPresenter.swift; sourceTree = "<group>"; };
 		52958BEA28E1F48900FE1F9D /* ResetPasswordProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordProtocol.swift; sourceTree = "<group>"; };
@@ -2120,6 +2122,7 @@
 				811E511B29335AAA003F4367 /* DetailBillModel.swift */,
 				811E511D29335CBA003F4367 /* DetailBillProductModel.swift */,
 				811E512D2933A942003F4367 /* ListBillModel.swift */,
+				528696DE2A06AD7800115841 /* CreateCartModel.swift */,
 			);
 			path = Enitites;
 			sourceTree = "<group>";
@@ -3029,6 +3032,7 @@
 				813090AD2934757D008EE306 /* ListBrandApplyVoucherViewController.swift in Sources */,
 				81DEF1F629294AB00011F7D9 /* DetailBillViewController.swift in Sources */,
 				8197793A292BBB1E005405CC /* ProfilePresenter.swift in Sources */,
+				528696DF2A06AD7800115841 /* CreateCartModel.swift in Sources */,
 				818E0CFF292A8C440075D024 /* SearchNearLocationCell.swift in Sources */,
 				522055D028D6F250003AF8EB /* SignInPresenter.swift in Sources */,
 			);

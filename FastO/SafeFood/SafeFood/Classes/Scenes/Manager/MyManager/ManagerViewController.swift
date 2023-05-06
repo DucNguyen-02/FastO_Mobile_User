@@ -1,11 +1,3 @@
-//
-//  ManagerViewController.swift
-//  SafeFood
-//
-//  Created by Lê Kim Hoàng on 11/14/22.
-//  
-//
-
 import UIKit
 
 final class ManagerViewController: BaseViewController {
