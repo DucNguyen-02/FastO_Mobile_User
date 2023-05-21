@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,7 +34,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Bhw-2v-sqU">
                             <rect key="frame" x="87" y="0.0" width="240" height="480.5"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo 1024" translatesAutoresizingMaskIntoConstraints="NO" id="v8s-yL-ZUN">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024" translatesAutoresizingMaskIntoConstraints="NO" id="v8s-yL-ZUN">
                                     <rect key="frame" x="88" y="0.0" width="64" height="64"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="64" id="CXq-JP-sQL"/>
@@ -60,10 +60,10 @@
                                     </subviews>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpe-zc-uvr">
-                                    <rect key="frame" x="32" y="416.5" width="176" height="64"/>
+                                    <rect key="frame" x="16" y="416.5" width="208" height="64"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bP2-ls-eVa" userLabel="Vui lòng xuất trình mã code để sử dụng dịch vụ">
-                                            <rect key="frame" x="0.0" y="0.0" width="176" height="33"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="208" height="33"/>
                                             <string key="text">Vui lòng xuất trình mã code
 để sử dụng dịch vụ</string>
                                             <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="14"/>
@@ -75,8 +75,6 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="bP2-ls-eVa" secondAttribute="trailing" id="2cR-KY-LGA"/>
                                         <constraint firstItem="bP2-ls-eVa" firstAttribute="top" secondItem="lpe-zc-uvr" secondAttribute="top" id="Grr-JR-mSd"/>
-                                        <constraint firstAttribute="trailing" secondItem="bP2-ls-eVa" secondAttribute="trailing" constant="16" id="R7R-2m-bIz"/>
-                                        <constraint firstItem="bP2-ls-eVa" firstAttribute="leading" secondItem="lpe-zc-uvr" secondAttribute="leading" constant="16" id="XOb-A7-hQU"/>
                                         <constraint firstItem="bP2-ls-eVa" firstAttribute="leading" secondItem="lpe-zc-uvr" secondAttribute="leading" id="hmI-D4-JUS"/>
                                     </constraints>
                                 </view>
@@ -119,7 +117,7 @@
         </view>
     </objects>
     <resources>
-        <image name="logo 1024" width="1024" height="1024"/>
+        <image name="1024" width="1024" height="1024"/>
         <namedColor name="black100">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

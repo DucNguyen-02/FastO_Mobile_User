@@ -86,11 +86,11 @@ extension TabBarViewController {
                 viewController.tabBarItem = item
                 return viewController
                 
-            case .notification:
-                let viewController = ListNotificationViewController()
-                viewController.setupData(isTabbar: true)
-                viewController.tabBarItem = item
-                return viewController
+//            case .notification:
+//                let viewController = ListNotificationViewController()
+//                viewController.setupData(isTabbar: true)
+//                viewController.tabBarItem = item
+//                return viewController
             }
         }
         self.viewControllers = viewControllers

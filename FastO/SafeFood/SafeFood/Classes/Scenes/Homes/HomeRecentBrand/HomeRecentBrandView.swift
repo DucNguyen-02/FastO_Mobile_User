@@ -57,7 +57,7 @@ private extension HomeRecentBrandView {
     func setupData(for cell: SafeFoodBrandItem, recentBrand: BrandModel) {
         cell.title = recentBrand.name
         cell.subtitle = recentBrand.description
-        cell.imageUrl = recentBrand.logo
+        cell.imageUrl = recentBrand.banner
         cell.ratingStar = CGFloat(recentBrand.ratingNumber)
         cell.countStar = recentBrand.ratingNumber
         cell.quantityOfVoted = recentBrand.ratings

@@ -4871,7 +4871,7 @@ struct _R: Rswift.Validatable {
       }
 
       static func validate() throws {
-        if UIKit.UIImage(named: "logo 1024", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logo 1024' is used in nib 'QRViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "1024", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named '1024' is used in nib 'QRViewController', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in nib 'QRViewController', but couldn't be loaded.") }
           if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in nib 'QRViewController', but couldn't be loaded.") }
@@ -5512,14 +5512,13 @@ struct _R: Rswift.Validatable {
       }
 
       static func validate() throws {
+        if UIKit.UIImage(named: "1024", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named '1024' is used in storyboard 'HomeViewController', but couldn't be loaded.") }
         if UIKit.UIImage(named: "ic_arrow_right", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_arrow_right' is used in storyboard 'HomeViewController', but couldn't be loaded.") }
         if UIKit.UIImage(named: "ic_profile", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_profile' is used in storyboard 'HomeViewController', but couldn't be loaded.") }
         if UIKit.UIImage(named: "ic_see_more", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic_see_more' is used in storyboard 'HomeViewController', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "logo 1024", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logo 1024' is used in storyboard 'HomeViewController', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in storyboard 'HomeViewController', but couldn't be loaded.") }
           if UIKit.UIColor(named: "grayA2A2A3", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'grayA2A2A3' is used in storyboard 'HomeViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "redFF2929", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'redFF2929' is used in storyboard 'HomeViewController', but couldn't be loaded.") }
         }
         if _R.storyboard.homeViewController().homeViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'homeViewController' could not be loaded from storyboard 'HomeViewController' as 'HomeViewController'.") }
       }
@@ -5536,10 +5535,7 @@ struct _R: Rswift.Validatable {
       let name = "LaunchScreen"
 
       static func validate() throws {
-        if UIKit.UIImage(named: "authentication-background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'authentication-background' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "logo 1024", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logo 1024' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
         }
       }
 

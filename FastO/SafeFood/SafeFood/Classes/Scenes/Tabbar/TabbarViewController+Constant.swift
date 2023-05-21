@@ -5,7 +5,7 @@ enum TabBarType: Int, CaseIterable {
     case manager
 //    case community
     case location
-    case notification
+//    case notification
     
     var title: String {
         switch self {
@@ -17,8 +17,8 @@ enum TabBarType: Int, CaseIterable {
 //            return "Community"
         case .location:
             return "Location"
-        case .notification:
-            return "Notification"
+//        case .notification:
+//            return "Notification"
         }
     }
     
@@ -36,8 +36,8 @@ enum TabBarType: Int, CaseIterable {
         case .location:
             return R.image.tabbar_location()
             
-        case .notification:
-            return R.image.tabbar_notification()
+//        case .notification:
+//            return R.image.tabbar_notification()
         }
     }
     
@@ -55,8 +55,8 @@ enum TabBarType: Int, CaseIterable {
         case .location:
             return R.image.tabbar_location()
             
-        case .notification:
-            return R.image.tabbar_notification()
+//        case .notification:
+//            return R.image.tabbar_notification()
         }
     }
 }
