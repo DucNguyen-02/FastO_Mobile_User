@@ -31,16 +31,22 @@ final class VoucherBillCell: UITableViewCell {
     }
 
     func discount(type: VoucherType, discount: Int) {
-        switch type {
-        case .percent:
-            discountAmountLabel.isHidden = true
-            discountPercentLabel.isHidden = false
-            discountPercentLabel.text = "-\(discount)%"
-
-        case .amount:
+        if discount == 0 {
             discountAmountLabel.isHidden = false
             discountPercentLabel.isHidden = true
-            discountAmountLabel.text = "-\(formatToString(number: discount))VNĐ"
+            discountAmountLabel.text = "Không áp dụng mã giảm giá"
+        } else {
+            switch type {
+            case .percent:
+                discountAmountLabel.isHidden = true
+                discountPercentLabel.isHidden = false
+                discountPercentLabel.text = "-\(discount)%"
+
+            case .amount:
+                discountAmountLabel.isHidden = false
+                discountPercentLabel.isHidden = true
+                discountAmountLabel.text = "-\(formatToString(number: discount))VNĐ"
+            }
         }
     }
 }

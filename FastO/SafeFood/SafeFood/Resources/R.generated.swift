@@ -1916,7 +1916,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 57 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 55 nibs.
   struct nib {
     /// Nib `BrandInformationView`.
     static let brandInformationView = _R.nib._BrandInformationView()
@@ -1970,12 +1970,8 @@ struct R: Rswift.Validatable {
     static let homeTopChartCommunityCell = _R.nib._HomeTopChartCommunityCell()
     /// Nib `HomeTopChartsView`.
     static let homeTopChartsView = _R.nib._HomeTopChartsView()
-    /// Nib `ListNotificationViewController`.
-    static let listNotificationViewController = _R.nib._ListNotificationViewController()
     /// Nib `ListReviewViewController`.
     static let listReviewViewController = _R.nib._ListReviewViewController()
-    /// Nib `NotificationCell`.
-    static let notificationCell = _R.nib._NotificationCell()
     /// Nib `PaymentBillCell`.
     static let paymentBillCell = _R.nib._PaymentBillCell()
     /// Nib `ProductBillCell`.
@@ -2242,26 +2238,10 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UINib(name: "ListNotificationViewController", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.listNotificationViewController) instead")
-    static func listNotificationViewController(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.listNotificationViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
     /// `UINib(name: "ListReviewViewController", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.listReviewViewController) instead")
     static func listReviewViewController(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.listReviewViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "NotificationCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.notificationCell) instead")
-    static func notificationCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.notificationCell)
     }
     #endif
 
@@ -2593,16 +2573,8 @@ struct R: Rswift.Validatable {
       return R.nib.homeTopChartsView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
-    static func listNotificationViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-      return R.nib.listNotificationViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-    }
-
     static func listReviewViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.listReviewViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-    }
-
-    static func notificationCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> NotificationCell? {
-      return R.nib.notificationCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? NotificationCell
     }
 
     static func paymentBillCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PaymentBillCell? {
@@ -4365,7 +4337,6 @@ struct _R: Rswift.Validatable {
       try _DetailProductViewController.validate()
       try _HomeHotVoucherCell.validate()
       try _HomeSearchView.validate()
-      try _ListNotificationViewController.validate()
       try _PaymentBillCell.validate()
       try _QRViewController.validate()
       try _RatingOrderCell.validate()
@@ -4777,44 +4748,12 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _ListNotificationViewController: Rswift.NibResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "ListNotificationViewController"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "ic-back", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ic-back' is used in nib 'ListNotificationViewController', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "black100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'black100' is used in nib 'ListNotificationViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "blue4789FA", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'blue4789FA' is used in nib 'ListNotificationViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "grayA2A2A3", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'grayA2A2A3' is used in nib 'ListNotificationViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "white100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'white100' is used in nib 'ListNotificationViewController', but couldn't be loaded.") }
-        }
-      }
-
-      fileprivate init() {}
-    }
-
     struct _ListReviewViewController: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "ListReviewViewController"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-      }
-
-      fileprivate init() {}
-    }
-
-    struct _NotificationCell: Rswift.NibResourceType {
-      let bundle = R.hostingBundle
-      let name = "NotificationCell"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> NotificationCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? NotificationCell
       }
 
       fileprivate init() {}
