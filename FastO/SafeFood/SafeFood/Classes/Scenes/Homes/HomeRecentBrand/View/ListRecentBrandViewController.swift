@@ -66,7 +66,7 @@ private extension ListRecentBrandViewController {
         cell.numberCount = nil
         cell.title = recentBrands.name
         cell.subtitle = recentBrands.description
-        cell.imageUrl = recentBrands.logo
+        cell.imageUrl = recentBrands.banner
         cell.ratingStar = CGFloat(recentBrands.ratingNumber)
         cell.countStar = recentBrands.ratingNumber
         cell.quantityOfVoted = recentBrands.ratings
