@@ -43,7 +43,7 @@ final class UserService: UserServiceProtocol {
     }
     
     func postProfile(_ info: [String: Any], completion: @escaping ServiceRequestCompletion<AccountProfileModel>) {
-        networkAdapter.request(target: UserRouter.postProfile(info)) { [weak self] result in
+        networkAdapter.request(target: UserRouter.postProfile(info)) { result in
             switch result {
             case .success(let response):
                 do {

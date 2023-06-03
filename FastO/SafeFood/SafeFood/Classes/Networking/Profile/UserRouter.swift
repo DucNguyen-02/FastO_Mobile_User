@@ -39,11 +39,11 @@ extension UserRouter: TargetType {
     var task: Task {
         switch self {
         case let .postProfile(info), let .changePassword(info):
-            return .requestParameters(parameters: info, encoding: JSONEncoding.default)
+            return .requestParameters(parameters: ["userProfileDtoRequest": info], encoding: JSONEncoding.default)
 
         case let .changeAvatar(avatar):
             let param: [String: Any] = ["imageUser": avatar]
-            return .requestParameters(parameters: param, encoding: JSONEncoding.default)
+            return .requestParameters(parameters: param, encoding: URLEncoding.default)
             
         default:
             return .requestPlain
